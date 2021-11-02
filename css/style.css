@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap");
+* {
+    box-sizing: border-box;font-family: "Quicksand", sans-serif;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  .navbar {
+    overflow: hidden;
+    display: flex;
+    text-align: center;
+    justify-content: flex-start;
+    background-color: #FFFFFF;
+   height:62px;
+    border-bottom: 1px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+ .navbar > .img >img:nth-child(1){
+     margin-left: 120px;
+     /* margin-top: 2px; */
+ }
+ .navbar > .img >img:nth-child(2){
+margin-bottom: 6px;
+ }
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+  }
+  
+  .dropdown {
+      
+    float: left;
+    overflow: hidden;
+    
+  }
+  
+  .dropdown .dropbtn {
+      
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font: inherit;
+    margin: 0;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    color: #EC008C;
+  }
+  
+  .dropdown-content {
+   
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    overflow-y: scroll;
+   
+    width: 50%;
+
+    left: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+    z-index: 1;
+    
+  }
+  
+  .dropdown-content .header {
+    background: red;
+    padding: 16px;
+    color: white;
+    
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+  width: 25%;
+  padding: 10px;
+  margin-left: 3rem;
+  background-color: #fafafa;
+  height: 450px;
+  }
+
+  .column h3 {
+    margin-right: 5rem;
+  }
+  
+  
+  .column a {
+    float: none;
+    color: black;
+    padding: 2px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .column a:hover {
+    color: #EC008C;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  .navbar > .detail{
+    margin-top: 19px;
+        margin-left: 320px;
+        font-size: 27px;
+    }
+/*   
+    .navbar > .detail > .fas, .navbar > .detail > .far{
+        padding:14px
+    } */
+
+    .navbar > .detail > i:nth-child(2), .navbar > .detail > i:nth-child(3), .navbar > .detail > i:nth-child(4){
+        margin-left:25px
+    }
+
+
+#box{
+    width: 1280px;
+    height:100vh;
+    margin: 0px auto;
+    /* background-color:green; */
+
+    
+}
+#ban {
+    
+    /* margin: 0px auto; */
+}
