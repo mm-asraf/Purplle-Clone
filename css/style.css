@@ -14,6 +14,7 @@
     justify-content: flex-start;
     background-color: #FFFFFF;
    height:62px;
+   cursor: pointer;
     border-bottom:  1px solid rgba(0, 0, 0, 0.2);
     font-family: Arial, Helvetica, sans-serif;
   }
@@ -30,7 +31,7 @@ margin-bottom: 6px;
     font-size: 16px;
     color: black;
     text-align: center;
-    padding: 14px 16px;
+    padding: 2px 16px;
     text-decoration: none;
     
   }
@@ -52,6 +53,7 @@ margin-bottom: 6px;
     background-color: inherit;
     font: inherit;
     margin: 0;
+    cursor: pointer;
     font-weight: bold;
     margin-top: 10px;
   }
@@ -141,9 +143,14 @@ margin-bottom: 6px;
     } */
 
     .navbar > .detail > i:nth-child(2), .navbar > .detail > i:nth-child(3), .navbar > .detail > i:nth-child(4){
-        margin-left:25px
+        margin-left:25px;
+        font-size: 20px;
     }
 
+    .navbar > .detail > a > i{
+      font-size:28px;
+      /* margin-bottom: 35px; */
+    }
 
 #box{
     width: 1280px;
@@ -362,7 +369,8 @@ section .thumbnail {
   flex: 0 0 auto;
 object-fit: cover;
 cursor: pointer;
-margin: 5px;
+margin: 10px;
+padding: 5px;
   border: 1px solid var(--black);
   overflow: hidden;
   transform: scale(.95);
@@ -426,14 +434,15 @@ section .thumbnail:hover {
 .lastupfoo{
   display: grid;
   width:80%;
-  margin:  0px auto;
+  margin:  10px auto;
   grid-template-columns: repeat(3,32.6%);
   grid-template-rows: 250px;
  
   grid-gap:10px;
   padding:5px;
   margin-bottom: 10px;
-  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
  .foo1{
@@ -650,13 +659,17 @@ text-align:center;
   width: 80%;
 }
 
+.featured2{
+  margin-left:165px;
+  width: 78%;
+}
 /* trending store */
 .trending{
   width: 80%;
   margin: 0 auto;
   display:grid;
   grid-template-columns: repeat(2,48%);
- 
+ cursor: pointer;
   grid-gap:30px;
   padding:10px;
   
@@ -685,4 +698,166 @@ text-align:center;
   grid-row: 2/ span 1;
 
   
+}
+
+
+
+
+/*slider part2*/
+
+/* PRODUCT FEATURED BEST SELLERS START */
+
+
+
+:root {
+  --white: #fff;
+  --black: #1c2b2d;
+  --blue: #31326f;
+  --color-primary: #9d0191;
+  --color-sec: #db6400;
+  --color-grey: #eee;
+  --color-dark-grey: #222831;
+}
+
+
+
+
+
+/* UTILITY */
+.p-small {
+  padding-bottom: 5px;
+}
+.p-medium {
+  padding-bottom: 10px;
+}
+.p-y {
+  padding: 10px 0;
+}
+.m-y {
+  margin: 10px 0;
+}
+
+.p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+
+
+.container2 {
+  max-width: 1200px;
+  margin: 0 auto;
+  /* padding: 0 20px; */
+}
+
+h1 {
+  font-size: 1rem;
+  line-height: 0.2;
+  text-align: center;
+  color: var(--color-primary);
+}
+
+#main {
+
+  background-color: #f4f4f4;
+  padding: 1rem 0;
+  width: 80%;
+  margin: 0 auto;
+  
+}
+
+.slide-container2 {
+  max-width: 1300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.arrow2 {
+  width: 2rem;
+  margin: 0 1rem;
+}
+
+.section {
+  width: 100%;
+  /* height: 300px; */
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  /* border: 1px solid black; */
+}
+
+.section::-webkit-scrollbar {
+  height: 5px;
+  width: 2px;
+  border: 1px solid #d5d5d5;
+  background: #d5d5d5;
+}
+
+.section::-webkit-scrollbar-track {
+  --webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+.section::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary);
+  outline: 1px solid #eee;
+   /* border-radius: 100px; */
+}
+
+.section .thumbnail2 {
+  flex: 0 0 auto;
+object-fit: cover;
+cursor: pointer;
+margin: 10px;
+padding: 6px;;
+  border: 1px solid var(--black);
+  overflow: hidden;
+  transform: scale(.95);
+  transition: all .3s;
+}
+
+.section .thumbnail2:hover {
+  transform: scale(1);
+}
+
+.product-details2 {
+  text-align: center;
+  padding-bottom: 1rem;
+  background-color: #fff;
+}
+
+.product-details2 h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.product-details2 p {
+  font-size: 1rem;
+  padding-bottom: 1rem;
+  color: green;
+  font-weight: 700;
+}
+
+.product-details2 p span {
+  text-decoration: line-through;
+  color: red;
+  font-weight: normal;
+}
+
+.product-details2 a {
+  font-size: 1rem;
+  text-decoration: none;
+  background-color: var(--color-sec);
+  color: #fff;
+  padding: .5rem 1rem;
+  border-radius: 3px;
+}
+
+.product-details2 a:hover {
+  background-color: var(--color-primary);
 }

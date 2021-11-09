@@ -33,5 +33,5 @@ function changeImg() {
 window.onload = changeImg
 //set - timeout end
 
-// featured
+
 
