@@ -14,7 +14,7 @@
     justify-content: flex-start;
     background-color: #FFFFFF;
    height:62px;
-    border-bottom: 1px solid black;
+    border-bottom:  1px solid rgba(0, 0, 0, 0.2);
     font-family: Arial, Helvetica, sans-serif;
   }
 
@@ -310,6 +310,8 @@ main {
 
   background-color: #f4f4f4;
   padding: 1rem 0;
+  width: 80%;
+  margin: 0 auto;
   
 }
 
@@ -411,7 +413,13 @@ section .thumbnail:hover {
 
 /* elite */
 #elite,#banner2,.head{
-  margin-left: 110px;
+  margin-left: 118px;
+  
+}
+
+#banner2{
+  width: 80%;
+  margin-left:155px;
 }
 
 /* footerup start */
@@ -425,13 +433,13 @@ section .thumbnail:hover {
   grid-gap:10px;
   padding:5px;
   margin-bottom: 10px;
-  border-top: 1px solid grey;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 
  .foo1{
   grid-column: 1/span 1;
   
-  border-right: 1px solid grey;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
  
 }
 .foo1 >img,.foo2 >img,.foo3 >img{
@@ -450,13 +458,13 @@ text-align:center;
 .foo2{
   grid-column: 2/span 1;
   
-  border-right: 1px solid grey;
+  border-right: 1px solid rgba(0, 0, 0, 0.2)
 
 }
 .foo3{
   grid-column: 3/span 1;
  
-  border-right: 1px solid grey;
+  border-right: 1px solid rgba(0, 0, 0, 0.2)
 
 }
 
@@ -466,9 +474,9 @@ text-align:center;
 
 .whole{
   width: 80%;
-  height: 80vh;
+  height: 600px;
   margin: 0 auto;
-  background-color:#F5F6F7
+  
 }
 .whole > iframe {
   margin-left: 60px;
@@ -477,10 +485,11 @@ text-align:center;
 
 .whole2{
   width: 80%;
-  height: 65vh;
-  margin: 0 auto;
+  height: 500px;
+  margin: 10px auto;
+  padding: 15px;
   background-color:#F5F6F7;
-  border-bottom: 1px solid black;
+  
   
 }
 .whole2 > p > strong {
@@ -496,13 +505,13 @@ text-align:center;
 /* last footer */
 .whole3{
   width: 80%;
-  height: 30vh;
-  margin: 0 auto;
-  background-color:#e8e8e8;
+  height: 205px;
+  margin: 10px auto;
+  background-color:#ffffff;
   display: grid;
   grid-template-columns: repeat(3,25%);
   grid-template-rows: 250px;
-  border-top: 1px solid black;
+  border-top: 1px solid rgba(0, 0, 0, 0.2)
 
   
 }
@@ -540,43 +549,48 @@ text-align:center;
 /* final footer */
 .whole4{
   width: 80%;
-  height: 20vh;
-  margin: 10px auto;
-  background-color:#e8e8e8;
+  height: 80px;
+  margin: 0px auto;
+  background-color:#ffffff;
   padding:10px;
-  border-bottom: 1px solid black;
+
   display: grid;
-  grid-template-columns: 10% 30% 20% 40%;
+  grid-template-columns: 10% 35% 15% 40%;
+  grid-template-rows: 60px;;
   
 }
 
 .part1{
   grid-column: 1 / span 1;
-  background-color:green;
+  
   
 }
-.part1 > h2,.part3 > h2{
+.part1 > h2,.part1 > p,.part3 > h2{
   font-size:18px;
   margin: 20px;
 }
 
 .part2{
   grid-column: 2 / span 1;
-  background-color:#705875
+  
 }
 .part2 > img{
   width: 80%;
   margin:20px;
+  
 }
 
 .part3{
   grid-column: 3 / span 1;
-  background-color:#30836e
+  
+}
+.part3 > h2{
+  margin-left: 90px;
 }
 
 .part4{
   grid-column: 4 / span 1;
-  background-color:#4345bb
+  
 }
 
 .part4 > i{
@@ -584,7 +598,91 @@ text-align:center;
   margin:20px 0 20px 10px;
 }
 
-.part2 > #copyright > p{
+.whole5{
+  width: 80%;
+  height: 40px;
+  margin: 10px auto;
+  
+  padding:10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
   display: flex;
-  font-size:12px;
+}
+
+.whole5 > #copyright > span:first-child{
+  margin-left:400px;
+  font-size:18px;
+  
+}
+
+/* font */
+.part4 > .fa-facebook{
+  color: #4267B2;
+}
+
+.part4 > .fa-twitter-square{
+  color: #1DA1F2;
+}
+
+
+
+.part4 > .fa-instagram{
+  color:  #8a3ab9 ;
+}
+
+.part4 > .fa-linkedin{
+  color:  #0e76a8;
+}
+
+.part4 > .fa-google-plus-g{
+  color:  #db4a39;
+}
+
+.part4 > .fa-pinterest{
+  color: #E60023;
+}
+.part4 > .fa-envelope{
+  color: #0489c9;
+}
+
+/* featured product */
+.featured{
+  margin-left:148px;
+  width: 80%;
+}
+
+/* trending store */
+.trending{
+  width: 80%;
+  margin: 0 auto;
+  display:grid;
+  grid-template-columns: repeat(2,48%);
+ 
+  grid-gap:30px;
+  padding:10px;
+  
+  grid-template-rows: 350px 350px;
+}
+
+.trend1{
+  grid-column: 1 / span 1;
+
+  grid-gap:10px;
+}
+
+.trend2{
+  grid-column:  2/ span 1;
+ 
+}
+
+.trend3{
+  grid-column:  1/ span 1;
+  grid-row: 2/ span 1;
+  
+}
+
+.trend4{
+  grid-column:  2/ span 1;
+  grid-row: 2/ span 1;
+
+  
 }
