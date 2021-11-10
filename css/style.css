@@ -448,7 +448,7 @@ section .thumbnail:hover {
  .foo1{
   grid-column: 1/span 1;
   
-  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
  
 }
 .foo1 >img,.foo2 >img,.foo3 >img{
@@ -461,19 +461,19 @@ text-align:center;
 .foo1 > .fnt,.foo2 > .fnt,.foo3 > .fnt{
   font-size:2rem;
 text-align:center;
-
+color:#EC008C;
   }
 
 .foo2{
   grid-column: 2/span 1;
   
-  border-right: 1px solid rgba(0, 0, 0, 0.2)
+  border-right: 1px solid rgba(0, 0, 0, 0.1)
 
 }
 .foo3{
   grid-column: 3/span 1;
  
-  border-right: 1px solid rgba(0, 0, 0, 0.2)
+  border-right: 1px solid rgba(0, 0, 0, 0.1)
 
 }
 
@@ -520,7 +520,8 @@ text-align:center;
   display: grid;
   grid-template-columns: repeat(3,25%);
   grid-template-rows: 250px;
-  border-top: 1px solid rgba(0, 0, 0, 0.2)
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+
 
   
 }
@@ -552,8 +553,13 @@ text-align:center;
 .l1 > p,.l2 > p,.l3 > p,.l4 > p{
   font-size:13px;
   text-align:center;
+  cursor: pointer;
 
-  
+}
+
+.l1 > p:hover,.l2 > p:hover,.l3 >p:hover,.l4 >p:hover{
+  color: #EC008C;
+
 }
 /* final footer */
 .whole4{
@@ -586,6 +592,7 @@ text-align:center;
 .part2 > img{
   width: 80%;
   margin:20px;
+  cursor: pointer;
   
 }
 
@@ -599,6 +606,7 @@ text-align:center;
 
 .part4{
   grid-column: 4 / span 1;
+  cursor: pointer;
   
 }
 
@@ -607,13 +615,22 @@ text-align:center;
   margin:20px 0 20px 10px;
 }
 
+.part4 > i:hover{
+  opacity:0.6;
+}
+
+#spotlight{
+  text-align:center;
+}
+/* whole5 */
+
 .whole5{
   width: 80%;
   height: 40px;
   margin: 10px auto;
   
   padding:10px;
-  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
   display: flex;
 }
 
@@ -713,7 +730,7 @@ text-align:center;
   --white: #fff;
   --black: #1c2b2d;
   --blue: #31326f;
-  --color-primary: #9d0191;
+  --color-primary: #ca72c3;
   --color-sec: #db6400;
   --color-grey: #eee;
   --color-dark-grey: #222831;
@@ -772,6 +789,7 @@ h1 {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  background-color: #FFFFFF;
 }
 
 .arrow2 {
@@ -860,4 +878,70 @@ padding: 6px;;
 
 .product-details2 a:hover {
   background-color: var(--color-primary);
+}
+
+
+/* purplle picks */
+.con{
+  display:grid;
+  width: 80%;
+  height:840px;
+  grid-template-columns: repeat(4,290px);
+  grid-template-rows: repeat(4,400px);
+  grid-gap:10px;
+  margin : 0 auto;
+  padding:10px;
+}
+
+
+.con1{
+  grid-column: 1/ span 1;
+  grid-row: 1/span 1;
+ 
+  
+}
+.con2{
+  grid-column: 2/ span 1;
+  grid-row: 1/span 1;
+ 
+}
+
+.con3{
+  grid-column: 3/ span 1;
+  grid-row: 1/span 1;
+  
+}
+.con4{
+  grid-column: 4/ span 1;
+  grid-row: 1/span 1;
+  
+}
+/* second row */
+.con5{
+  grid-column: 1/ span 1;
+  grid-row: 2/span 1;
+
+}
+
+.con6{
+  grid-column: 2/ span 1;
+  grid-row: 2/span 1;
+ 
+}
+
+.con7{
+  grid-column: 3/ span 1;
+  grid-row: 2/span 1;
+
+}
+.con8{
+  grid-column: 4/ span 1;
+  grid-row: 2/span 1;
+
+}
+
+.border{
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding:3px;
+  border-radius:5px;
 }
