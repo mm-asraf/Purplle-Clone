@@ -53,11 +53,10 @@
             <div id="Login">
                 
                 <h2  class="login-tit">Login/Create Account</h2>
-                <form  id="Lform" onsubmit="Login()">
+                <form  id="Lform" onsubmit="Login(event)">
                   <div id="formdata1">
                     <label class="lable">Enter Mobile No. <span class="require">*</span></label>
-                    <input autocomplete="off" id="mobile" required="" type="tel" >
-                    
+                    <input autocomplete="off" id="mobile"  required="" minlength="10" maxlength="10" type="number" >
                   </div>
                   <div id="formdata2">
                     
@@ -87,7 +86,7 @@
               <div id="Signup">
                <h2 class="login-tit">Welcome Aboard</h2>
               <p  class="text1" >Let’s know you the better and make sure that you never lose access to your account.</p>
-                  <form  id="signup-form" onsubmit="validEmail()" >
+                  <form  id="signup-form" onsubmit="createAcc(event)" >
                     <label>Enter Name <span class="require">*</span></label>
                     <input autocomplete="off" id="name" required="" type="text">
     
@@ -95,7 +94,7 @@
                     <input autocomplete="off"  id="email" required="" type="email">
                       
                     <label >Mobile No <span class="require">*</span></label>
-                    <input autocomplete="off" id="mobile" required="" type="tel" >
+                    <input autocomplete="off" id="mobile" maxlength="10" minlength="10" required="" type="tel" >
                     
     
                       <label >Create password <span class="require">*</span></label>
@@ -112,7 +111,7 @@
                 </div>
                 </div>
                
-                <input type="submit" id="btn3"  value="Submit"/>
+                <input type="submit" id="btn3" onclick="validEmail()" value="Submit"/>
             </form>
             <button id="back" onclick="signIn()" ><img src="https://w7.pngwing.com/pngs/674/479/png-transparent-arrow-computer-icons-simple-left-arrow-icon-miscellaneous-purple-angle-thumbnail.png"/>Back To Login </button>
                   
@@ -126,5 +125,6 @@
 
 </html>
 <script src="./script/index.js"></script>
+
 
 
