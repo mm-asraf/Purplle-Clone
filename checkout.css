@@ -48,7 +48,7 @@
     border-radius:3px;
     text-align: center;
     color: white;
-    padding-top: 12px;
+    padding-top: 13px;
     padding-bottom: 10px;
 }
 .div22{
@@ -75,6 +75,9 @@
 a {
     color: white;
     text-decoration: none;
+}
+.a1{
+    color: #e40980;
 }
 
 .add2{
