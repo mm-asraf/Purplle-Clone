@@ -53,10 +53,11 @@
             <div id="Login">
                 
                 <h2  class="login-tit">Login/Create Account</h2>
-                <form  id="Lform" onsubmit="Login(event)">
+                <form  id="Lform" onsubmit="Login()">
                   <div id="formdata1">
                     <label class="lable">Enter Mobile No. <span class="require">*</span></label>
-                    <input autocomplete="off" id="mobile" required="" type="number" >
+                    <input autocomplete="off" id="mobile" required="" type="tel" >
+                    
                   </div>
                   <div id="formdata2">
                     
@@ -86,7 +87,7 @@
               <div id="Signup">
                <h2 class="login-tit">Welcome Aboard</h2>
               <p  class="text1" >Let’s know you the better and make sure that you never lose access to your account.</p>
-                  <form  id="signup-form" onsubmit="createAcc(event)" >
+                  <form  id="signup-form" onsubmit="validEmail()" >
                     <label>Enter Name <span class="require">*</span></label>
                     <input autocomplete="off" id="name" required="" type="text">
     
