@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;500&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+    <style>
+        *{
+            font-family: 'Cairo', sans-serif;
+            font-weight: 500px;
+            color: #2C414C;
+        }
+
+        #display{
+            display: grid;
+            grid-template-columns: repeat(4, 20%);
+            grid-gap: 25px;
+            margin-left: 15%;
+        }
+
+        .shades{
+            display: flex;
+        }
+
+        /* #container{
+            display: flex;
+        } */
+
+        #zoomImage{
+            width: 45%;
+            height: 35%;
+            margin-top: 10%;
+        }
+
+        #divLeft{
+            display: flex;
+            flex-direction: column;
+            width: 8%;
+            margin: 10% 4% 0% -8%;
+        }
+
+        .tiles{
+            width: 80%;
+            height: 20%;
+            padding: 10%;
+        }
+        .top-tile{
+            padding: 0% 10% 10% 10%;
+        }
+
+        #divRight{
+            width: 40%;
+            margin: 8% 5% 0% 6%;
+        }
+
+        .shade{
+            width: 13%;
+            height: 13%;
+            padding: 2% 4% 2% 0%;
+        }
+
+        #navDiv{
+            display: flex;
+            margin: 5% 10% 0% 10%;
+        }
+
+        hr{
+            width: 50%;
+            margin-left: 10%;
+            margin-top: -18px;
+            background-color: #6C7A82;
+        }
+
+        .navDiv{
+            padding: 0% 4% 0% 0%;
+            font-size: 170%;
+        }
+
+        #highlights{
+            max-width: 50%;
+            margin-left: 10%;
+            margin-top: 2%;
+            color: #6C7A82;
+        }
+
+        #highTitle{
+            margin-left: 10%;
+            margin-top: -2%;
+            font-size: 140%;
+            
+        }
+
+        #benefits{
+            display: flex;
+            width: 40%;
+            margin-left: 10%;
+        }
+
+        .benefits{
+            width: 15%;
+            height: 15%;
+            padding: 4.5%;
+            opacity: 0.7;
+        }
+
+        #beneText{
+            display: flex;
+            max-width: 25%;
+            font-size: 100%;
+            margin-left: 12%;
+        }
+        
+        #benefitsText{
+            margin-left: 10%;
+            font-size: 140%;
+        }
+
+        .beneText{
+            margin: 0% 20% 0% 2%;
+            text-align: center;
+        }
+
+        #description{
+            max-width: 50%;
+            margin-left: 10%;
+            color: #6C7A82;
+        }
+
+        #desTitle{
+            margin-left: 10%;
+            font-size: 140%;
+        }
+
+        #bestBefore{
+            margin-left: 12%;
+        }
+
+        #specTitle{
+            margin-left: 10%;
+            font-size: 140%;
+        }
+
+        #specification{
+            margin-left: 10%;
+            font-size: 80%;
+        }
+
+        .spec{
+            padding: 0.3%;
+        }
+
+        details{
+            margin-left: 12%;
+        }
+
+        #ingredients{
+            max-width: 50%;
+            color: #6C7A82;
+        }
+
+        #mainTitle{
+            font-size: 20px;
+        }
+
+        #rating{
+            width: 11%;
+            height: 6%;
+            background-color: #CDD614;
+            padding-left: 2%;
+            color: white;
+        }
+
+        #discountedPrice{
+            display: inline-block;
+            font-size: 40px;
+            margin-top: -5px;
+        }
+
+        #originalPrice{
+            display: inline-block;
+            color: #96A0A6;
+            font-size: 20px;
+            margin-left: 2%;
+            text-decoration: line-through;
+        }
+
+        #offPercentage{
+            display: inline-block;
+            margin-left: 2%;
+            font-size: 20px;
+            color: #E40980;
+        }
+
+        #bestSeller{
+            width: 30%;
+            height: 6%;
+            color: white;
+            background-color: #A456AB;
+            padding-left: 2%;
+            margin-top: -30px;
+            /* display: inline-block; */
+        }
+
+        #seeTop{
+            margin-top: -30px;
+            display: inline-block;
+            color: #E40980;
+        }
+
+        #shadeText{
+            margin-top: -10px;
+        }
+
+        #shadeSelect{
+            width: 81%;
+            height: 8%;
+            border: 1px solid gray;
+        }
+
+        #addToCartBtn{
+            width: 55%;
+            height: 10%;
+            border: none;
+            background-color: #E40980;
+            color: white;
+            border-radius: 5px;
+            font-size: 120%;
+        }
+
+        #saveBtn{
+            width: 30%;
+            height: 10%;
+            margin-left: 3%;
+            border: 0.5px solid rgb(180, 175, 175);
+            color: #E40980;
+            border-radius: 5px;
+            font-size: 120%;
+        }
+    </style>
+</head>
+<body>
+    <div id="display"></div>
+    <div id="navDiv"></div>
+    <hr>
+    <br>
+    <br>
+    <p id="highTitle">HIGHLIGHTS</p>
+    <hr>
+    <div id="highlights"></div>
+    <p id="benefitsText">BENEFITS</p>
+    <div id="benefits"></div>
+    <div id="beneText"></div>
+    <p id="desTitle">DESCRIPTION</p>
+    <div id="description"></div>
+    <p id="bestBefore">Best Before: 31 March 2024</p>
+    <p id="specTitle">SPECIFICATION</p>
+    <div id="specification"></div>
+    <details>
+        <summary>Ingredients</summary>
+        <div id="ingredients"></div>
+    </details>
+    <br>
+    <hr>
+    <details>
+        <summary>About Brand</summary>
+        <div id="aboutBrand"></div>
+    </details>
+    <br>
+    <hr>
+</body>
+</html>
+
+<script>
+     let products = JSON.parse(localStorage.getItem("showProduct"));
+
+    let display = document.getElementById("display");
+    let navDiv = document.getElementById("navDiv");
+    let highlights = document.getElementById("highlights");
+    let benefits = document.getElementById("benefits");
+    let beneText = document.getElementById("beneText");
+    let description = document.getElementById("description");
+    let specification = document.getElementById("specification");
+    let ingredients = document.getElementById("ingredients");
+    let aboutBrand = document.getElementById("aboutBrand");
+
+
+function showProduct(products){
+       
+    products.forEach((product)=>{
+
+        display.innerHTML = null;
+        display.style.display = "flex";
+        display.style.removeProperty("grid-template-columns");
+        display.style.removeProperty("grid-gap");
+        display.style.removeProperty("margin-left");
+
+        let divLeft = document.createElement("div");
+        let divRight = document.createElement("div");
+        let zoomImage = document.createElement("img");
+        let details = document.createElement("p");
+        let reviews = document.createElement("p");
+        let related = document.createElement("p");
+        let questions = document.createElement("p");
+
+        let image_1 = document.createElement("img");
+        let image_2 = document.createElement("img");
+        let image_3 = document.createElement("img");
+        let image_4 = document.createElement("img");
+        let image_5 = document.createElement("img");
+
+        let benefitsImageOne = document.createElement("img");
+        let benefitsImageTwo = document.createElement("img");
+        let benefitsImageThree = document.createElement("img");
+        let benefitsImageFour = document.createElement("img");
+        let benefitsImageFive = document.createElement("img");
+
+        let benefitsTextOne = document.createElement("p");
+        let benefitsTextTwo = document.createElement("p");
+        let benefitsTextThree = document.createElement("p");
+        let benefitsTextFour = document.createElement("p");
+        let benefitsTextFive = document.createElement("p");
+
+        let speciality = document.createElement("p");
+        let ApplicationConcerns = document.createElement("p");
+        let MakeupColorFamily = document.createElement("p");
+        let ActiveIngredients = document.createElement("p");
+        let Finish = document.createElement("p");
+        let ProductFormat = document.createElement("p");
+        let Benefits = document.createElement("p");
+        let ProductType = document.createElement("p");
+        let CountryOfOrigin = document.createElement("p");
+
+        benefitsImageOne.setAttribute("class", "benefits");
+        benefitsImageTwo.setAttribute("class", "benefits");
+        benefitsImageThree.setAttribute("class", "benefits");
+        benefitsImageFour.setAttribute("class", "benefits");
+        benefitsImageFive.setAttribute("class", "benefits");
+
+        benefitsTextOne.setAttribute("class", "beneText");
+        benefitsTextTwo.setAttribute("class", "beneText");
+        benefitsTextThree.setAttribute("class", "beneText");
+        benefitsTextFour.setAttribute("class", "beneText");
+        benefitsTextFive.setAttribute("class", "beneText");
+
+        image_1.src = product.imageOne;
+        image_2.src = product.imageTwo;
+        image_3.src = product.imageThree;
+        image_4.src = product.imageFour;
+        image_5.src = product.imageFive;
+
+        image_1.setAttribute("class", "tiles");
+        image_1.setAttribute("class", "top-tile");
+        image_2.setAttribute("class", "tiles");
+        image_3.setAttribute("class", "tiles");
+        image_4.setAttribute("class", "tiles");
+        image_5.setAttribute("class", "tiles");
+
+        divLeft.append(image_1, image_2, image_3, image_4, image_5);
+
+        zoomImage.src = product.imageOne;
+        image_1.onmouseover = function(){
+        displayImageOne();
+        }
+
+        function displayImageOne(){
+        zoomImage.src = product.zoomImageOne;
+        }
+
+        image_2.onmouseover = function(){
+        displayImageTwo();
+        }
+
+        function displayImageTwo(){
+        zoomImage.src = product.zoomImageTwo;
+        }
+
+        image_3.onmouseover = function(){
+        displayImageThree();
+        }
+
+        function displayImageThree(){
+        zoomImage.src = product.zoomImageThree;
+        }
+
+        image_4.onmouseover = function(){
+        displayImageFour();
+        }
+
+        function displayImageFour(){
+        zoomImage.src = product.zoomImageFour;
+        }
+
+        image_5.onmouseover = function(){
+        displayImageFive();
+        }
+
+        function displayImageFive(){
+        zoomImage.src = product.zoomImageFive;
+        }
+
+
+        details.innerText = "Details";
+        reviews.innerText = "Reviews";
+        related.innerText = "Related";
+        questions.innerText = "Questions";
+        details.setAttribute("class", "navDiv");
+        reviews.setAttribute("class", "navDiv");
+        related.setAttribute("class", "navDiv");
+        questions.setAttribute("class", "navDiv");
+        highlights.innerText = product.highlights;
+        description.innerText = product.description;
+        ingredients.innerText = product.ingredients;
+        aboutBrand.innerText = product.aboutBrand;
+
+        benefitsImageOne.src = product.benefits.imageOne;
+        benefitsImageTwo.src = product.benefits.imageTwo;
+        benefitsImageThree.src = product.benefits.imageThree;
+        benefitsImageFour.src = product.benefits.imageFour;
+        benefitsImageFive.src = product.benefits.imageFive;
+
+        benefitsTextOne.innerText = "High Color Payoff";
+        benefitsTextTwo.innerText = "Long Lasting";
+        benefitsTextThree.innerText = "Water Resistant";
+        benefitsTextFour.innerText = "Single Stroke Application";
+        benefitsTextFive.innerText = "Highly Pigmented";
+
+        speciality.innerText = "Speciality:" + "   " + product.specification.speciality;
+        ApplicationConcerns.innerText = "Application Concerns:" + "   " + product.specification.ApplicationConcerns;
+        MakeupColorFamily.innerText = "Makeup Color Family:" + "   " + product.specification.MakeupColorFamily;
+        ActiveIngredients.innerText = "Active Ingredients:" + "   " + product.specification.ActiveIngredients;
+        Finish.innerText = "Finish:" + "   " + product.specification.Finish;
+        ProductFormat.innerText = "Product Format:" + "   " + product.specification.ProductFormat;
+        Benefits.innerText = "Benefits:" + "   " + product.specification.Benefits;
+        ProductType.innerText = "Product Type:" + "   " + product.specification.ProductFormat;
+        CountryOfOrigin.innerText = "Country Of Origin:" + "   " + product.specification.CountryOfOrigin;
+
+        speciality.setAttribute("class", "spec");
+        ApplicationConcerns.setAttribute("class", "spec");
+        MakeupColorFamily.setAttribute("class", "spec");
+        ActiveIngredients.setAttribute("class", "spec");
+        Finish.setAttribute("class", "spec");
+        ProductFormat.setAttribute("class", "spec");
+        Benefits.setAttribute("class", "spec");
+        ProductType.setAttribute("class", "spec");
+        CountryOfOrigin.setAttribute("class", "spec");
+
+
+        //right div
+        let title = document.createElement("p");
+        let rating = document.createElement("div");
+        let discounted_price = document.createElement("p");
+        let original_price = document.createElement("p");
+        let off_percentage = document.createElement("p");
+        let shades = document.createElement("div");
+        let shade_1 = document.createElement("img");
+        let shade_2 = document.createElement("img");
+        let shade_3 = document.createElement("img");
+        let shade_4 = document.createElement("img");
+        let shade_5 = document.createElement("img");
+        let addToCart = document.createElement("button");
+        let save = document.createElement("button");
+        let bestSeller = document.createElement("p");
+        let seeTop = document.createElement("p");
+        let shadeText = document.createElement("p");
+        let shadeSelect = document.createElement("select");
+        let optionOne = document.createElement("option");
+        let optionTwo = document.createElement("option");
+        let optionThree = document.createElement("option");
+        let optionFour = document.createElement("option");
+        let optionFive = document.createElement("option");
+
+        addToCart.innerText = "ADD TO CART";
+        save.innerText = "SAVE";
+
+        addToCart.onclick = function(){
+            appendToCart(product);
+            window.location.href = "cart.html";
+        }
+
+        title.innerText = product.title;
+        discounted_price.innerText = product.discountedPrice;
+        original_price.innerText = "MRP" + product.originalPrice;
+        off_percentage.innerText = "Save Rs56" + " " + "(" + product.offPercentage + ")" + "off";
+        rating.innerText = product.rating;
+        bestSeller.innerText = "#3 Best Seller";
+        seeTop.innerText = "In Lipstick See Top 25";
+        shadeText.innerText = "SHADE:";
+        optionOne.innerText = "My First Hook-up 11";
+        optionTwo.innerText = "My First Bae 9";
+        optionThree.innerText = "My First Sitcom Binge 21";
+        optionFour.innerText = "My First Selfie 6";
+        optionFive.innerText = "My First Gossip 20";
+
+        title.setAttribute("id", "mainTitle");
+        rating.setAttribute("id", "rating");
+        discounted_price.setAttribute("id", "discountedPrice");
+        original_price.setAttribute("id", "originalPrice");
+        off_percentage.setAttribute("id", "offPercentage");
+        bestSeller.setAttribute("id", "bestSeller");
+        seeTop.setAttribute("id", "seeTop");
+        shadeText.setAttribute("id", "shadeText");
+        shadeSelect.setAttribute("id", "shadeSelect");
+        addToCart.setAttribute("id", "addToCartBtn");
+        save.setAttribute("id", "saveBtn");
+
+
+        shade_1.src = product.shadeOne;
+        shade_2.src = product.shadeTwo;
+        shade_3.src = product.shadeThree;
+        shade_4.src = product.shadeFour;
+        shade_5.src = product.shadeFive;
+
+        shade_1.setAttribute("class", "shade");
+        shade_2.setAttribute("class", "shade");
+        shade_3.setAttribute("class", "shade");
+        shade_4.setAttribute("class", "shade");
+        shade_5.setAttribute("class", "shade");
+
+        shades.append(shade_1, shade_2, shade_3, shade_4, shade_5);
+        shadeSelect.append(optionOne, optionTwo, optionThree, optionFour, optionFive);
+        divRight.append(title, rating, discounted_price, original_price, off_percentage, bestSeller, seeTop, shadeText, shadeSelect, shades, addToCart, save);
+
+        // div.setAttribute("id", "container");
+        zoomImage.setAttribute("id", "zoomImage");
+        divLeft.setAttribute("id", "divLeft");
+        divRight.setAttribute("id", "divRight");
+
+        display.append(divLeft, zoomImage, divRight);
+        navDiv.append(details, reviews, related, questions);
+        benefits.append(benefitsImageOne, benefitsImageTwo, benefitsImageThree, benefitsImageFour, benefitsImageFive);
+        beneText.append(benefitsTextOne, benefitsTextTwo, benefitsTextThree, benefitsTextFour, benefitsTextFive);
+        specification.append(speciality, ApplicationConcerns, MakeupColorFamily, Finish, ActiveIngredients, ProductFormat, Benefits, ProductType, CountryOfOrigin);
+
+        // display.append(div);
+
+});
+        
+    }
+
+showProduct(products);
+localStorage.setItem("showProduct", JSON.stringify([]));
+
+function appendToCart(product){
+    if(localStorage.getItem("cart") === null)
+        {
+            localStorage.setItem("cart", JSON.stringify([]));
+        }
+   let cart = JSON.parse(localStorage.getItem("cart"));
+   cart.push(product);
+   localStorage.setItem("cart", JSON.stringify(cart));
+}
+
+
+</script>

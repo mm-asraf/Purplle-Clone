@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;500&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+    <style>
+        *{
+            font-family: 'Cairo', sans-serif;
+            font-weight: 500;
+            color: #2C414C;
+        }
+        #display{
+            display: flex;
+        }
+
+        #divLeft{
+            display: flex;
+            flex-direction: column;
+            width: 55%;
+            margin: 1% 10%;
+
+        }
+
+        #box{
+            display: flex;
+            border: 1px solid #c1c9ce;
+            margin: 2%;
+            height: 110%;
+            box-shadow: 2px 2px 20px #c1c9ce;
+        }
+
+        img{
+            width: 14%;
+            height: 50%;
+            margin: 2% 2%; 
+        }
+
+        #textBox{
+            display: flex;
+            flex-direction: column;
+            margin-left: 2%;
+            margin-top: -1%;
+            max-width: 75%;
+        }
+
+        #og{
+            display: flex;
+            margin-left: -20%;
+            margin-top: -70%;
+        }
+
+        #originalPrice{
+            padding: 5%;
+            text-decoration: line-through;
+            color: #6C7A82;
+            font-size: 100%;
+        }
+
+        #discountedPrice{
+            margin-top: 5%;
+            margin-left: 35%;
+            font-size: 140%;
+        }
+
+        #offPercentage{
+            padding: 5% 3%;
+            color: #E40980;
+        }
+
+        #price{
+            display: flex;
+            flex-direction: column;
+        }
+
+        #quantityBox{
+            display: flex;
+        }
+
+        #quantity{
+            width: 6%;
+            height: 70%;
+            margin-left: 1%;
+            margin-top: -0.7%;
+        }
+
+        #quantityText{
+            margin-top: -0.8%;
+        }
+
+        #remove{
+            margin-top: 5%;
+            margin-bottom: 2%;
+            border: none;
+        }
+        #wishlist{
+            margin-top: 5%;
+            margin-bottom: 2%;
+            border: none;
+        }
+
+        #myCart{
+            font-size: 170%;
+            margin-left: 10%;
+        }
+    </style>
+</head>
+<body>
+    <p id="myCart"></p>
+    <div id="display"></div>
+</body>
+</html>
+
+<script>
+     let cart = JSON.parse(localStorage.getItem("cart"));
+
+     let display = document.getElementById("display");
+     let myCart = document.getElementById("myCart");
+     var cartItems = 0;
+     var totalMrp = 0;
+
+    function showCartProduct(cart){
+
+        let divLeft = document.createElement("div");
+        let divRight = document.createElement("div");
+
+        cart.forEach((product)=>{
+            let box = document.createElement("div");
+            let text = document.createElement("div");
+            let og = document.createElement("div");
+            let price = document.createElement("div");
+            let buttons = document.createElement("div");
+            let quantityBox = document.createElement("div");
+            let quantityText = document.createElement("p");
+            let img = document.createElement("img");
+            let title = document.createElement("p");
+            let discounted_price = document.createElement("p");
+            let original_price = document.createElement("p");
+            let off_percentage = document.createElement("p");
+            let quantity = document.createElement("select");
+            let one = document.createElement("option");
+            let two = document.createElement("option");
+            let three = document.createElement("option");
+            let four = document.createElement("option");
+            let five = document.createElement("option");
+            let six = document.createElement("option");
+            let remove = document.createElement("button");
+            let wishList = document.createElement("button");
+            cartItems++;
+            img.src = product.img;
+            title.innerText = product.title;
+            discounted_price.innerText = product.discountedPrice;
+            original_price.innerText = product.originalPrice;
+            totalMrp = totalMrp + +(product.originalPrice);
+            // console.log(totalMrp);        
+            off_percentage.innerText = product.offPercentage + "off";
+            quantityText.innerText = "Qty:"
+            one.innerText = "1";
+            two.innerText = "2";
+            three.innerText = "3";
+            four.innerText = "4";
+            five.innerText = "5";
+            six.innerText = "6";
+            remove.innerHTML = "Remove";
+            wishList.innerHTML = "Add To Wishlist";
+
+            box.setAttribute("id", "box");
+            text.setAttribute("id", "textBox");
+            price.setAttribute("id", "price");
+            quantity.setAttribute("id", "quantity");
+            quantityText.setAttribute("id", "quantityText");
+            quantityBox.setAttribute("id", "quantityBox")
+            divLeft.setAttribute("id", "divLeft");
+            divRight.setAttribute("id", "divRight");
+            og.setAttribute("id", "og");
+            original_price.setAttribute("id", "originalPrice");
+            off_percentage.setAttribute("id", "offPercentage");
+            discounted_price.setAttribute("id", "discountedPrice");
+            remove.setAttribute("id", "remove");
+            wishList.setAttribute("id", "wishlist");
+            
+            quantity.append(one, two, three, four, five, six);
+            quantityBox.append(quantityText, quantity)
+            buttons.append(remove, wishList)
+            text.append(title, quantityBox, buttons);
+            og.append(original_price, off_percentage);
+            price.append(discounted_price, og);
+            box.append(img, text, price);
+            divLeft.append(box);
+            display.append(divLeft, divRight);
+            
+        });
+    }
+
+    showCartProduct(cart);
+    myCart.innerText = "My Cart" + "(" + cartItems + ")";
+</script>
