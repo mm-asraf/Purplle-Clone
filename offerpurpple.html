@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main{
+            width:100%;
+            height:40px;
+            margin:  auto;
+            /* overflow: hidden;   */
+            position: relative;
+            margin-top: 20px;
+        }
+        h1{
+            width:90%;
+            margin:10px auto;
+            background-color: #196702;
+             font-weight: bold;
+             color: white;
+        }
+        span{
+            position: absolute;
+            top:40%;
+            font-size: 60px;
+            margin-top: 60px;
+            font-weight: bold;
+            color: #78909C;
+            cursor:pointer;
+            left:.5%;
+             z-index:1; 
+        }
+        span:nth-of-type(2){
+            left:98%;
+            text-align: right;
+        }
+        section{
+            width:80%;
+            height:300px;
+            background-color: white;
+            margin:10px auto;
+            display: flex;
+            justify-content: left;
+                overflow-x: hidden;    
+        }
+        section::webkit-scrrollbar{
+            visibility: hidden;
+        }
+       section> div{
+           /* min-width:330px; */
+           min-width:20%;
+            height:260px;
+            position:relative;
+            left:0;
+            text-align: center;
+            /* padding-top: 60px;;  */
+            font-size: 100px;
+            font-weight: bold;
+            margin:10px 20px;
+            color:white;
+             /* background-color: purple;  */
+             transition: 0.5s;
+        }
+        /* .crousel>img{
+            width:100%;
+            height:120%;
+            margin-top: 0;
+        }  */
+
+        section>div>img{
+            width:100%;
+            height:100%;
+        }
+        #offd{
+            text-align: center;
+            font-size: 24px;;
+            margin-top: 29px;;
+        }
+        #offline{
+             /* border:1px solid black;  */
+            width:80px;
+            height: 0px;;
+            margin-top: 48px;;
+            margin-left: 7px;
+            background-color: #BDBDBD;
+        }
+        #fistt{
+            display: flex;
+            text-align: center;
+            /* border: 1px solid green; */
+            height: 50px;
+            width:150px;;
+            margin-left: 40%;
+        }
+        #foryou{
+            text-align: center;
+            font-size: 32px;
+            font-weight: 500;
+        }
+        #container{
+            width:95%;
+           /* border:1px solid blue;*/
+            margin: auto;
+            margin-top: 35px;;
+        }
+        .contimg{
+            width:98%;
+            height:390px;
+           /* border:1px solid red;*/
+            margin: 20px auto;
+        }
+
+        #container>.contimg>img{
+            width:100%;
+            height:100%;
+        }
+        .flt-left{
+  float:left;
+}
+.carousel{
+  width:100%;
+  margin:auto;
+  margin-top: 50px;;
+}
+.row{
+  width:90%;
+  padding:0;
+  overflow:hidden;
+  margin:auto;
+}
+.row-container{
+  width:2000px;
+  transition:0.5s;
+}
+.container{
+  width:250px;
+  
+  float:left;
+  display:inline;
+  margin:0 5px;
+}
+.clear{
+  clear:both;
+}
+.controls{
+  width:100%;
+  margin:auto;
+}
+button{
+   border:none; 
+  padding:10px 20px;
+  color:#90A4AE;
+  background-color: white;
+  font-size: 29px;
+  /* background:#21252b; */
+  font-weight:bold;
+  outline:none;
+  border-radius:3px;
+  /* height:100px; */
+  position:relative;
+}
+.imgcarcont{
+    padding: 4px;
+    color:#B0BEC5;
+
+}
+.chred{
+  color:red;
+}
+#h2fet{
+    text-align: center;
+    font-size: 44px;
+    margin-top: 20%;
+}
+.third{
+   /* border:1px solid blue;*/
+    width:95%;
+    height:300px;
+    margin:auto;
+    display: flex;
+}
+.container1{
+    width:29%;
+    margin:1%
+}
+.container1>img{
+    width:100%;
+    height:100%;
+}
+.containee11{
+    width:250px;
+    height:300px;
+    margin-top: 2%;
+    margin-left: 2%;
+
+}
+.containee11>img{
+    width:100%;
+    height: 100%;
+}
+.fullimg{
+    width:1270px;
+    margin:auto;
+    height:350px;
+   /* border:1px solid red;*/
+    margin-top: 2%;
+}
+.fullimg>img{
+    width:100%;
+    height:100%;
+}
+.img{
+            width:95%;
+            height:270px;
+            margin-left:3%;
+            margin-top: 3px;
+            
+    }
+    .catimg{
+        width:95%;
+        height:450px;
+      /*  border: 1px solid blue;;*/
+        margin:auto;
+        display:flex;
+    }
+    .caimg{
+        width:30%;
+        margin:1%;
+       /* border:1px solid red;*/
+        height:430px;
+    }
+    .caimg >img{
+        width:100%;
+        height:100%;
+    }
+    .card {
+  height: 300px;
+  width: 19%;;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  font-size: 40px;
+  margin: 10px;
+  flex: 200px 0 0;
+}
+.card>img{
+    width:100%;
+    height:100%;
+}
+.cards img {
+    width: 100%;
+    object-fit: cover;
+}
+.cards-wrapper {
+  display: flex; 
+  width:390px;
+  transition: ease 0.5s;
+}
+.display-area {
+  width: 1280px;
+/*   border: 1px solid black; */
+  overflow-x: hidden;
+  margin: auto;
+  margin-top: 50px;;
+}
+
+.dots-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.dot {
+  border: none;
+  background: rgba(0, 0, 0, 0.2);
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  border-radius: 50%;
+  outline: none;
+}
+.dot:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+.dot.active {
+  background: rgba(0, 0, 0, 0.5);
+}
+.moreimg{
+    width:95%;
+    margin:auto;
+  /*  border:1px solid blue;*/
+    margin-top: 10px;;
+    display: flex;
+}
+.mimg{
+    width:23%;
+    margin:1%;
+    /*border:1px solid red;*/
+    height:400px;
+}
+.mimg>img{
+    width:100%;
+    height:100%;
+}
+.pupimg{
+    width:95%;
+    height:80px;
+    margin:auto;
+    margin-top:50px;
+    /* border:1px solid black; */
+}
+.pupimg>img{
+    width:100%;
+    height:100%;
+}
+
+#myslideshow1{
+             /* border:3px solid black; */
+             width:100%;
+             margin-top: 4%;;
+         }
+         .imagee{
+             width:95%;
+             height:390px;
+             margin-left:3%;
+         }
+         /* runiinig iamge slider code */
+
+         .card11 {
+  height: 400px;
+  width: 100px;;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  font-size: 40px;
+  margin: 10px;
+  flex: 200px 0 0;
+}
+.cards1 img {
+    width: 190%;
+    object-fit: cover;
+}
+.cards-wrapper1 {
+  display: flex; 
+  transition: ease 0.5s;
+}
+.display-area1 {
+  width: 1280px;
+/*   border: 1px solid black; */
+   overflow-x: hidden; 
+  margin: auto;
+  margin-top: 50px;;
+}
+
+.dots-wrapper1 {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width:1200px;
+}
+
+.dot1 {
+  border: none;
+  background: rgba(0, 0, 0, 0.2);
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  border-radius: 50%;
+  outline: none;
+}
+.dot1:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+.dot1.active1 {
+  background: rgba(0, 0, 0, 0.5);
+}
+.card11>img{
+  width:100%;
+  height:100%;
+}
+.giftimg{
+    width:95%;
+    margin:auto;
+   /* border:1px solid red;*/
+    height:400px;
+    display: flex;
+}
+.gimg{
+    width:20%;
+    margin:1.3%;
+    height:350px;
+    /*border:1px solid green;*/
+}
+.gimg>img{
+    width:100%;
+    height:100%;
+}
+.secimg{
+  width:100%;
+  border:1px solid gray;
+  height:250px;
+  display: flex;
+  margin-top: 50px;;
+}
+.secdiv{
+  width:32%;
+
+}
+.secdiv{
+  width:30%;
+  height:15%;
+  text-align: center;
+  margin-top: 30px;;
+}
+.seccont{
+  margin-top: 17px;;
+  font-size: 30px;;
+}
+.seccont1{
+  margin-top: 20px;;
+  color: gray;
+  text-align: center;
+  padding:5px 20px;;
+}
+.li{
+  border:1px solid rgb(219, 214, 214);
+  height:100%;
+  margin-left: 35px;;
+}
+.lvideo{
+  width: 100%;
+  height: 400px;
+  /*border: 1px solid red;*/
+  margin-top:30px;
+  /*display: flex;*/
+  background-color: #BDBDBD;
+}
+.live{
+  width:480px;
+  height:200px;
+ /* border:1px solid green;*/
+  margin:1% 5%;
+  
+}
+.live1{
+  width:480px;
+  height:200px;
+  /*border:1px solid green;*/
+  margin:1% 5%;
+  display: flex;
+}
+.vcont{
+  font-size: 25px;
+    margin-left: 50px;;
+
+}
+.vcont1{
+  font-size: 25px;
+    margin-left: 370px;;
+    
+}
+.lb1{
+  width:70%;
+  margin:auto;
+ /* border:1px solid blue;*/
+  height:30px;
+  margin-top: 40px;;
+  display: flex;
+  background-color: #BDBDBD;
+}
+.lb2{
+  width:70%;
+  margin:auto;
+ /* border:1px solid green;*/
+  height:250px;
+  margin-top: 5px;;
+  display: flex;
+  background-color: #BDBDBD;
+}
+.live>iframe{
+  width:100%;
+  height:100%;
+}
+.pink{
+  width:65%;
+  height: 100%;;
+  background-color: #F48FB1;
+  
+   
+}
+.pcont{
+  color:white;
+  margin-top: 20px;
+  padding: 10px;
+}
+#imgpink{
+  width:35%;
+  height: 100%;
+  background-color: #F48FB1;
+  border-radius: 5px;;
+}
+#imgpink>img{
+  width:100%;
+  height: 100%;
+}
+.pcoimg{
+  width:100px;
+  height:40px;
+  border-radius: 2%;
+  margin-top: 2%;
+}
+.pcoimg>img{
+  width:100%;
+  height: 100%;
+}
+    </style>
+</head>
+<body>
+    
+    <div id="fistt">
+        <div id="offd">Offers</div>
+        <div id="offline"></div>
+    </div>
+
+    <div id="foryou">FOR YOU</div>
+
+    <div id="container">
+         
+        <div class="contimg">
+            <img src="https://media6.ppl-media.com/tr:w-1280,ar-51715-16654,c-at_max,f-gif/mediafiles/ecomm/misc/1636368343_gv-web-banner.gif" alt="">
+        </div>
+
+        <div class="contimg">
+            <img src="https://media6.ppl-media.com/tr:w-1280,ar-51715-16654,c-at_max/mediafiles/ecomm/misc/1636368448_nybae-web-header-banner-1298x418.jpg" alt="">
+        </div>
+
+        <div class="contimg">
+            <img src="https://media6.ppl-media.com/tr:w-1280,ar-51715-16654,c-at_max/mediafiles/ecomm/misc/1636368404_ag-web-banner-1298x418.jpg" alt="">
+        </div>
+
+        <div class="contimg">
+            <img src="https://media6.ppl-media.com/tr:w-1280,ar-51715-16654,c-at_max/mediafiles/ecomm/misc/1636368555_sq-web-banner-1298x418.jpg" alt="">
+        </div>
+
+        <div class="contimg">
+            <img src="https://media6.ppl-media.com/tr:w-1280,ar-51715-16654,c-at_max,f-gif/mediafiles/ecomm/misc/1636368576_pu-web-hero-banner-1298-x-418.gif" alt="">
+        </div>
+
+        <div class="contimg">
+            <img src="https://media6.ppl-media.com/tr:w-1280,ar-51715-16654,c-at_max/mediafiles/ecomm/misc/1636368523_dd-hero-banner-1298-x-418.jpg" alt="">
+        </div>
+
+        <div class="contimg">
+            <img src="https://media6.ppl-media.com/tr:w-1280,ar-51715-16654,c-at_max/mediafiles/ecomm/misc/1634812768_web-hero-banner-1298-x-418-1.jpg" alt="">
+        </div>
+
+        <div class="contimg">
+            <img src="https://media6.ppl-media.com/tr:w-1280,ar-51715-16654,c-at_max/mediafiles/ecomm/misc/1634886222_everything-new-on-purplle-1.jpg" alt="">
+        </div>
+
+        <div class="contimg">
+            <img src="https://media6.ppl-media.com/tr:w-1280,ar-51715-16654,c-at_max,f-gif/mediafiles/ecomm/misc/1634790183_the-ultimate-buying-guidethe-ultimate-buying-guide-web-1.gif" alt="">
+        </div>
+
+        <div class="contimg">
+            <img src="https://media6.ppl-media.com/tr:w-1280,ar-51715-16654,c-at_max/mediafiles/ecomm/misc/1636372777_web-hero-banner-1298-x-418.jpg" alt="">
+        </div>
+    </div>
+    <main>
+         <!-- <h1>VIKASA KHAMBR</h1>  -->
+        
+         
+        <span>&#139</span>
+        <span>&#155</span>
+        <section>
+
+            
+            <div class="crousel">
+                <img src="https://media6.ppl-media.com/tr:w-582,ar-1-1,c-at_max/mediafiles/ecomm/misc/1636374847_1.jpg" alt="">
+            </div>
+            <div class="crousel">
+                <img src="https://media6.ppl-media.com/tr:w-582,ar-1-1,c-at_max/mediafiles/ecomm/misc/1636374848_2.jpg" alt="">
+            </div>
+            <div class="crousel">
+                <img src="https://media6.ppl-media.com/tr:w-582,ar-1-1,c-at_max/mediafiles/ecomm/misc/1636374848_3.jpg" alt="">
+            </div>
+            <div class="crousel">
+                <img src="https://media6.ppl-media.com/tr:w-582,ar-1-1,c-at_max/mediafiles/ecomm/misc/1636374849_4.jpg" alt="">
+            </div>
+            <div class="crousel">
+                <img src="https://media6.ppl-media.com/tr:w-582,ar-1-1,c-at_max/mediafiles/ecomm/misc/1636374849_5.jpg" alt="">
+            </div>
+            <div class="crousel">
+                <img src="https://media6.ppl-media.com/tr:w-582,ar-1-1,c-at_max/mediafiles/ecomm/misc/1636374850_6.jpg" alt="">
+            </div>
+            <div class="crousel">
+                <img src="https://media6.ppl-media.com/tr:w-582,ar-1-1,c-at_max/mediafiles/ecomm/misc/1636374850_7.jpg" alt="">
+            </div>
+            <div class="crousel">
+                <img src="https://media6.ppl-media.com/tr:w-582,ar-1-1,c-at_max/mediafiles/ecomm/misc/1636374850_8.jpg" alt="">
+            </div>
+            <div class="crousel">
+                <img src="https://media6.ppl-media.com/tr:w-582,ar-1-1,c-at_max/mediafiles/ecomm/misc/1636374851_9.jpg" alt="">
+            </div>
+            <div class="crousel">
+                <img src="https://media6.ppl-media.com/tr:w-582,ar-1-1,c-at_max/mediafiles/ecomm/misc/1636374851_10.jpg" alt="">
+            </div>
+            <div class="crousel">
+                <img src="https://media6.ppl-media.com/tr:w-582,ar-1-1,c-at_max/mediafiles/ecomm/misc/1636374847_1.jpg" alt="">
+            </div>
+            <div class="crousel">
+                <img src="https://media6.ppl-media.com/tr:w-582,ar-1-1,c-at_max/mediafiles/ecomm/misc/1636374848_2.jpg" alt="">
+            </div>
+        </section>
+    </main>
+
+<div>.</div>
+    <!-- start second carosel code -->
+    <div id="h2fet"> FEATURED</div>
+   
+  <div>.</div>
+
+ 
+     <div class="carousel">
+        <button class='flt-left' onclick="slideRight(this);"><</button>
+        <div class="row flt-left">
+          
+         <div class="row-container">
+        <div class="container"> 
+         
+            <img src=" https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,oi-AD_35x235_small_kJWM53nMn1.png,ofo-top_right/static/img/product/241855/faces-canada-liquid-sindoor-red-and-maroon-5-ml_1_display_1623031359_15968b51.jpg" />
+           <div class="imgcarcont">Face Canada Liquid Sindoor <br>Red & Marron 5ml </div>
+           <div>Rs.224 <del class="imgcarcont"><small >298</small></del> <small class="chred">25% off</small></div>
+        
+        </div>
+        <div class="container">
+          <img src="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,oi-AD_35x235_small_kJWM53nMn1.png,ofo-top_right/static/img/product/225842/minimalist-salicylic-acid-2-percentage-serum-for-blackheads-pore-tightening-oil-control-and-acne-breakouts_8_display_1619593315_ab76f1f8.jpg" />
+          <div class="imgcarcont">Minimalist 2% Salicyclic Acid<br>Face Serum For Acene </div>
+          <div>Rs.522 <del class="imgcarcont"><small >549</small></del> <small class="chred">5% off</small></div>
+       
+        
+        
+        </div>
+        <div class="container">
+          <img src="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,oi-AD_35x235_small_kJWM53nMn1.png,ofo-top_right/static/img/product/257094/dove-hair-fall-rescue-shampoo-180-ml_1_display_1622859859_3687a44d.jpg" alt="">
+           <div class="imgcarcont">Dove hair fall Shampoo, <br>180ml </div>
+          <div>Rs.152 <del class="imgcarcont"><small >160</small></del> <small class="chred">5% off</small></div>
+       
+       
+       
+        </div>
+            <div class="container">
+              <img src="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,oi-AD_35x235_small_kJWM53nMn1.png,ofo-top_right/static/img/product/238535/dove-hair-therapy-dandruff-care-shampoo-340-ml-20-30_8_display_1631084910_64ae333b.jpg" alt="">
+           <div class="imgcarcont">dove Dandruff Care Shampoo <br>(340ml) </div>
+          <div>Rs.290 <del class="imgcarcont"><small >305</small></del> <small class="chred">5% off</small></div>
+       
+        
+        
+        </div>
+           <div class="container">
+          <img src="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,oi-AD_35x235_small_kJWM53nMn1.png,ofo-top_right/static/img/product/246981/nivea-milk-delights-face-wash-moisturizing-honey-for-dry-skin-100-ml_1_display_1593843998_5ca92492.jpg" alt="">
+          <div class="imgcarcont">NIVEA Face Wash Milk Delights <br>Mositiourizing Honey Dry Skin </div>
+          <div>Rs.148 <del class="imgcarcont"><small >185</small></del> <small class="chred">20% off</small></div>
+       
+        
+        
+        </div>
+           <div class="container">
+          <img src=" https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,oi-AD_35x235_small_kJWM53nMn1.png,ofo-top_right/static/img/product/200933/argatin-keratin-treatment-argan-oil-infused-60ml-x-4_3_display_1632378094_138e47b2.jpg" />
+          <div class="imgcarcont">Face Canada Liquid Sindoor <br>Red & Marron 5ml </div>
+          <div>Rs.224 <del class="imgcarcont"><small >298</small></del> <small class="chred">25% off</small></div>
+       
+        
+        
+        </div>
+
+         <div class="container">
+          <img src="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,oi-AD_35x235_small_kJWM53nMn1.png,ofo-top_right/static/img/product/245483/dove-daily-shine-shampoo-80-ml_6_display_1631083680_c5cde4ef.jpg" alt="">
+           <div class="imgcarcont">Dove Daily Shine Shampoo <br>80ml </div>
+          <div>Rs.68 <del class="imgcarcont"><small >78</small></del> <small class="chred">5% off</small></div>
+       
+        
+        
+        </div>
+ <!--
+        <div class="container">
+          <img src="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,oi-AD_35x235_small_kJWM53nMn1.png,ofo-top_right/static/img/product/175638/tresemme-keratin-smooth-conditioner-200-ml-18_3_display_1609828520_0f26dace.jpg" alt="">
+           <div class="imgcarcont">TRESemme Keratin Smooth <br>Condiitoner (190ml) </div>
+          <div>Rs.176 <del class="imgcarcont"><small >220</small></del> <small class="chred">20% off</small></div>
+       
+        
+        
+        </div> -->
+<!-- 
+
+        <div class="container">
+   <img src="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,oi-AD_35x235_small_kJWM53nMn1.png,ofo-top_right/static/img/product/225838/minimalist-aha-25-percentage-pha-5-percentage-bha-2-percentage-exfoliant-peel-for-skin-brightening-glow-and-pore-cleansing_1_display_1624018001_ba2f3575.jpg" alt="">
+     <div class="imgcarcont">Minimalist AHA 25% +PHA 5%<br> + BHA 2% Peeling Solution for </div>
+          <div>Rs.664 <del class="imgcarcont"><small >699</small></del> <small class="chred">5% off</small></div>
+       
+        
+        
+        </div>
+
+        <div class="container">
+          <img src=" https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,oi-AD_35x235_small_kJWM53nMn1.png,ofo-top_right/static/img/product/200933/argatin-keratin-treatment-argan-oil-infused-60ml-x-4_3_display_1632378094_138e47b2.jpg" />
+          <div class="imgcarcont">Face Canada Liquid Sindoor <br>Red & Marron 5ml </div>
+          <div>Rs.224 <del class="imgcarcont"><small >298</small></del> <small class="chred">25% off</small></div>
+       
+        
+        
+        </div>
+
+        <div class="container">
+          <img src="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,oi-AD_35x235_small_kJWM53nMn1.png,ofo-top_right/static/img/product/242988/minimalist-2-percentage-salicylic-acid-lha-face-cleanser-for-oil-control-and-acne_4_display_1624017921_e82575bf.jpg" alt="">
+           <div class="imgcarcont">Minimalist AHA 25% +PHA 5% <br>+ BHA 2% Peeling Solution for </div>
+          <div>Rs.284 <del class="imgcarcont"><small >299</small></del> <small class="chred">5% off</small></div>
+       
+        
+        
+        </div> -->
+          <div class="clear"></div>
+          </div>
+         
+          </div>
+          <button class='flt-left'  onclick="slideLeft(this);">></button> 
+          <div class="clear"></div>
+      </div>
+      <br><br>
+
+<!-- sttatrt third caroseel -->
+      <div>.</div>
+<div class="third">
+
+    <div class="container1">
+         
+        <img src="https://media6.ppl-media.com/tr:w-512,ar-2-3,c-at_max/mediafiles/ecomm/misc/1636519164_gv-copy.jpg" alt="">           
+               </div>
+               <div class="container1">
+        <img src="https://media6.ppl-media.com/tr:w-512,ar-2-3,c-at_max/mediafiles/ecomm/misc/1636481278_vaseline-320x480.jpeg" alt="">          
+               
+               
+               </div>
+               <div class="container1">
+        <img src="https://media6.ppl-media.com/tr:w-512,ar-2-3,c-at_max/mediafiles/ecomm/misc/1636480752_ny-sq-pu-eye-makeup.jpg" alt="">          
+              
+              
+               </div>
+                   <div class="container1">
+                   <img src="https://media6.ppl-media.com/tr:w-512,ar-2-3,c-at_max/mediafiles/ecomm/misc/1636481276_anveya-320x480.jpeg" alt="">
+               
+               </div>
+                  <div class="container1">
+                 <img src="https://media6.ppl-media.com/tr:w-512,ar-2-3,c-at_max/mediafiles/ecomm/misc/1636480751_ag.jpg" alt="">
+               </div>
+                  <!-- <div class="container1">
+                 
+                   <img src="https://media6.ppl-media.com/tr:w-512,ar-2-3,c-at_max/mediafiles/ecomm/misc/1636493243_power-gummies-320x480.jpeg" alt="">
+               </div>
+       
+                <div class="container1">
+                  <img src="https://media6.ppl-media.com/tr:w-512,ar-2-3,c-at_max/mediafiles/ecomm/misc/1636478162_store.jpg" alt="">
+               
+               </div> -->
+</div>
+
+<div class="containee11">
+    <img src="https://media6.ppl-media.com/tr:w-1280,c-at_max,oi-AD_35x235_small_kJWM53nMn1.png,ofo-top_right/mediafiles/ecomm/promo/1636469753_creative-1636469753303-on-eyes.jpg" alt="">
+</div>
+
+<div class="fullimg">
+    <img src="https://media6.ppl-media.com/tr:w-1280,c-at_max,oi-AD_35x235_small_kJWM53nMn1.png,ofo-top_right/mediafiles/ecomm/promo/1636467301_creative-1636467299456-sq-web-thick-strip.jpg" alt="">
+</div>
+
+<br><br>
+
+<div>.</div>
+
+<div id="myslideshow"></div>
+<div>.</div>
+
+<h3 style ="margin-left: 3%;">SHOP BY CATEGORY</h3>
+
+<div class="catimg">
+
+     <div class="caimg">
+         <img src="https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1625470191_make-up.png" alt="">
+     </div>
+
+     <div class="caimg">
+        <img src="https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1625470192_skincare.png" alt="">
+    </div>
+
+    <div class="caimg">
+        <img src="https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1625470190_haircare.png" alt="">
+    </div>
+
+    <div class="caimg">
+        <img src="https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1625470192_personal-care.png" alt="">
+    </div>
+</div>
+
+<div class="pupimg">
+    <img src="https://media6.ppl-media.com/mediafiles/ecomm/misc/1625475218_web-strip.jpg" alt="">
+</div>
+<div>.</div>
+
+<!-- start anothe carosel -->
+
+
+<div class="display-area">
+    <div class="cards-wrapper">
+      
+      <div class="card"><img src=" https://media6.ppl-media.com/tr:w-512,ar-613-810,c-at_max/mediafiles/ecomm/misc/1626784213_gv.jpg" alt=""></div>
+      <div class="card"><img src="https://media6.ppl-media.com/tr:w-512,ar-613-810,c-at_max/mediafiles/ecomm/misc/1626869427_nybae.jpg" alt=""></div>  
+      <div class="card"><img src="https://media6.ppl-media.com/tr:w-512,ar-613-810,c-at_max/mediafiles/ecomm/misc/1626784201_ag.jpg" alt=""></div>
+      <div class="card"><img src="https://media6.ppl-media.com/tr:w-512,ar-613-810,c-at_max/mediafiles/ecomm/misc/1629458478_sq-widget.jpg" alt=""></div>
+  
+      <div class="card"><img src="https://media6.ppl-media.com/tr:w-512,ar-613-810,c-at_max/mediafiles/ecomm/misc/1629458479_pu-widget.jpg" alt=""></div>
+      <div class="card"><img src="https://media6.ppl-media.com/tr:w-512,ar-613-810,c-at_max/mediafiles/ecomm/misc/1626784211_dd.jpg" alt=""></div>  
+      <div class="card"><img src="https://media6.ppl-media.com/tr:w-512,ar-613-810,c-at_max/mediafiles/ecomm/misc/1626784210_artboard-11.jpg" alt=""></div>
+      <div class="card"><img src="https://media6.ppl-media.com/tr:w-512,ar-613-810,c-at_max/mediafiles/ecomm/misc/1626784217_va.jpg" alt=""></div>
+      
+      <div class="card"><img src="https://picsum.photos/200?random=9" alt=""></div>
+      <div class="card"><img src="https://picsum.photos/200?random=10" alt=""></div>  
+      <div class="card"><img src="https://picsum.photos/200?random=11" alt=""></div>
+      <div class="card"><img src="https://picsum.photos/200?random=12" alt=""></div>
+      
+      <div class="card"><img src="https://picsum.photos/200?random=13" alt=""></div>
+      <div class="card"><img src="https://picsum.photos/200?random=14" alt=""></div>  
+      <div class="card"><img src="https://picsum.photos/200?random=15" alt=""></div>
+      <div class="card"><img src="https://picsum.photos/200?random=16" alt=""></div>
+    </div> 
+  </div>
+  
+  <div class="dots-wrapper">
+    <button class="dot active"></button>
+    <button class="dot"></button>
+    <button class="dot"></button>
+    <button class="dot"></button>
+  </div>
+
+  <div>.</div>
+  <div class="moreimg">
+   <div class="mimg">
+       <img src="https://media6.ppl-media.com/tr:w-320,ar-100-139,c-at_max,f-gif/mediafiles/ecomm/misc/1636435856_clinique_900.gif" alt="">
+   </div>
+
+   <div class="mimg">
+    <img src=" https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1636388038_kama-600x900.jpeg" alt="">
+</div>
+
+<div class="mimg">
+    <img src="https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1636378106_estee-lauder-600x900.jpeg" alt="">
+</div>
+
+<div class="mimg">
+    <img src="https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1636378101_wella-sp-600x900.jpeg" alt="">
+</div>
+
+
+  </div>
+
+  <div class="moreimg">
+    <div class="mimg">
+        <img src="https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1636380973_bobbi-brown-600x900.jpeg" alt="">
+    </div>
+ 
+    <div class="mimg">
+     <img src=" https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1636471750_dot-key-600x900.jpeg" alt="">
+ </div>
+ 
+ <div class="mimg">
+     <img src="https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1636378109_bio-derma-600x900.jpeg" alt="">
+ </div>
+ 
+ <div class="mimg">
+     <img src="https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1636378107_cosrx-600x900.jpeg" alt="">
+ </div>
+ 
+ 
+   </div>
+
+
+   <div class="moreimg">
+    <div class="mimg">
+        <img src="https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max,f-gif/mediafiles/ecomm/misc/1636378105_innisfree_900.gif" alt="">
+    </div>
+ 
+    <div class="mimg">
+     <img src=" https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1636471749_tribe-concept-1.jpg" alt="">
+ </div>
+ 
+ <div class="mimg">
+     <img src="https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1636378102_rovectin-600x900.jpeg" alt="">
+ </div>
+ 
+ <div class="mimg">
+     <img src="https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1635782040_authentic-fragrances-600x900-1.jpeg" alt="">
+ </div>
+ 
+ 
+   </div>
+
+
+   <div class="moreimg">
+    <div class="mimg">
+        <img src="https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1636378103_asa-600x900.jpeg" alt="">
+    </div>
+ 
+    <div class="mimg">
+     <img src=" https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1636378102_sadhev-600x900.jpeg" alt="">
+ </div>
+ 
+ <div class="mimg">
+     <img src=" https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1636282250_glutaweis.jpg" alt="">
+ </div>
+ 
+ <div class="mimg">
+     <img src="https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max,f-gif/mediafiles/ecomm/misc/1636471750_mac_600x900.gif" alt="">
+ </div>
+ 
+ 
+   </div>
+
+   <div class="pupimg">
+    <img src="https://media6.ppl-media.com/tr:w-1280,c-at_max/mediafiles/ecomm/misc/1620711142_elite-web.png" alt="">
+</div>
+
+<!-- 
+slider code start  -->
+
+<div id="myslideshow1"></div>
+<!-- runnuing image slider code at here  -->
+<div class="display-area1">
+    <div class="cards-wrapper1">
+      
+      <div class="card11"><img src=" https://media6.ppl-media.com/tr:w-512,ar-29-40,c-at_max/mediafiles/ecomm/misc/1636381184_wow-348x480.jpeg"></div>
+      <div class="card11"><img src=" https://media6.ppl-media.com/tr:w-512,ar-29-40,c-at_max/mediafiles/ecomm/misc/1636360126_maybelline-348x480-1.jpeg" alt=""></div>  
+      <div class="card11"><img src="https://media6.ppl-media.com/tr:w-512,ar-29-40,c-at_max/mediafiles/ecomm/misc/1636360126_mamaearth-348x480-1.jpeg" alt=""></div>
+      <div class="card11"><img src=" https://media6.ppl-media.com/tr:w-512,ar-29-40,c-at_max/mediafiles/ecomm/misc/1636478225_plum-348x480-2.jpeg" alt=""></div>
+  
+      <div class="card11"><img src=" https://media6.ppl-media.com/tr:w-512,ar-29-40,c-at_max/mediafiles/ecomm/misc/1636360124_faces-canada-348x480-1.jpeg" alt=""></div>
+      <div class="card11"><img src=" https://media6.ppl-media.com/tr:w-512,ar-29-40,c-at_max/mediafiles/ecomm/misc/1636360124_mcaffeine-348x480-1.jpeg" alt=""></div>  
+      <div class="card11"><img src=" https://media6.ppl-media.com/tr:w-512,ar-29-40,c-at_max/mediafiles/ecomm/misc/1636360123_minimalist-348x480-1.jpeg" alt=""></div>
+      <div class="card11"><img src=" https://media6.ppl-media.com/tr:w-512,ar-29-40,c-at_max/mediafiles/ecomm/misc/1636360123_the-face-shop-348x480-1.jpeg" alt=""></div>
+      
+      <div class="card11"><img src=" https://media6.ppl-media.com/tr:w-512,ar-29-40,c-at_max/mediafiles/ecomm/misc/1636478226_moms-co-348x480-2.jpeg" alt=""></div>
+      <div class="card11"><img src=" https://media6.ppl-media.com/tr:w-512,ar-29-40,c-at_max/mediafiles/ecomm/misc/1636360122_innisfree-348x480-2.jpeg" alt=""></div>  
+      <div class="card11"><img src=" https://media6.ppl-media.com/tr:w-512,ar-29-40,c-at_max/mediafiles/ecomm/misc/1636360121_carmesi-348x480-1.jpeg" alt=""></div>
+      <div class="card11"><img src=" https://media6.ppl-media.com/tr:w-512,ar-29-40,c-at_max/mediafiles/ecomm/misc/1636360120_dot-key-348x480-1.jpeg" alt=""></div>
+      
+      <div class="card11"><img src=" https://media6.ppl-media.com/tr:w-512,ar-29-40,c-at_max/mediafiles/ecomm/misc/1636360120_myglamm-348x480.jpeg" alt=""></div>
+      <div class="card11"><img src="https://picsum.photos/200?random=14" alt=""></div>  
+      <div class="card11"><img src="https://picsum.photos/200?random=15" alt=""></div>
+      <div class="card11"><img src="https://picsum.photos/200?random=16" alt=""></div>
+    </div> 
+  </div>
+  
+  <div class="dots-wrapper1">
+    <button class="dot1 active1"></button>
+    <button class="dot1"></button>
+    <button class="dot1"></button>
+    <button class="dot1"></button>
+  </div>
+  <h3 style="margin:20px 28px">GIFITING STORE</h3>
+  <div class="giftimg">
+   <div class="gimg">
+               <img src="https://media6.ppl-media.com/tr:w-512,ar-2-3,c-at_max/mediafiles/ecomm/misc/1625471389_under-499-opt.png" alt="">
+   </div>
+
+   <div class="gimg">
+    <img src=" https://media6.ppl-media.com/tr:w-512,ar-2-3,c-at_max/mediafiles/ecomm/misc/1625921590_widgets.jpg" alt="">
+</div>
+
+<div class="gimg">
+    <img src=" https://media6.ppl-media.com/tr:w-512,ar-2-3,c-at_max/mediafiles/ecomm/misc/1625471387_under-499-opt-copy-2.png" alt="">
+</div>
+
+<div class="gimg">
+    <img src=" https://media6.ppl-media.com/tr:w-512,ar-2-3,c-at_max/mediafiles/ecomm/misc/1625471388_under-499-opt-copy.png" alt="">
+</div>
+  </div>
+
+
+  <!-- maek seoncnd last 3box div -->
+
+  <div class="secimg">
+     
+    <div class="secdiv">
+         <img src="https://media6.ppl-media.com/mediafiles/ecomm/home/1499247950_secure-payment.jpg" alt="">
+         <div class="seccont">100% Secure Payment</div>
+         <div class="seccont1">All major Debit & Credit Card Accepted</div>
+    </div>
+  
+    <div class="li"></div>
+    <div class="secdiv">
+      <img src="https://media6.ppl-media.com/mediafiles/ecomm/home/1499247975_beauty-assistant.jpg" alt="">
+      <div class="seccont">Beauty Assistant </div>
+      <div class="seccont1">Tell me what you are looking for and i will work magic to help you find your perfect match</div>
+    </div>
+    <div class="li"></div>
+    <div class="secdiv">
+    <img src="https://media6.ppl-media.com/mediafiles/ecomm/home/1499247997_help-center.jpg" alt="">
+    <div class="seccont">Help Center</div>
+    <div class="seccont1">Got a question? Look no further. Browse FAQ or submit your query</div>
+    </div>
+  </div>
+
+  <!-- start add video footer part  -->
+
+  <div class="lvideo">
+    <div>.</div>
+     <div class="lb1">
+       <div class="vcont">Spotlight</div>
+      <div class="vcont1">Shop On the go</div> 
+     </div>
+      
+
+     <div class="lb2">
+
+       <div class="live">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/NrI9d0XiP7M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+       </div>
+      <div class="live1">
+        
+        <div class="pink">
+
+<div class="pcont">
+  The Purplle BFF APPis now fully loaded! Get Downloading on both ios and Android
+  <div class="pcoimg">
+    <img src="https://media6.ppl-media.com/mediafiles/ecomm/home/1499247983_google-play.png" alt="">
+    <img src="https://media6.ppl-media.com/mediafiles/ecomm/home/1499247967_app-store.png" alt="">
+  </div>
+</div>
+        </div>
+        <div id="imgpink">
+           <img src="https://media6.ppl-media.com/mediafiles/ecomm/home/1499247958_shop-on-the-go.png" alt=""> 
+        </div>
+      </div> 
+     
+    
+    </div>
+
+
+    
+      
+      
+
+     
+   
+  </div>
+</body>
+<script>
+    var span = document.getElementsByTagName("span");
+    var divv = document.getElementsByTagName("div");
+
+    var l =0;
+
+    span[1].onclick = ()=>{
+        l++
+        for(var i of divv){
+            if(l==0) {i.style.left ="0px";}
+            if(l==1) {i.style.left ="-740px";}
+            if(l==2) {i.style.left ="-1480px";}
+            if(l==3) {i.style.left ="-2220px";}
+            if(l==4) {i.style.left ="-2960px";}
+                if(l>4) {l=4}
+
+        }
+    }
+
+    span[0].onclick = ()=>{
+        l--;
+        for(var i of divv){
+            if(l==0) {i.style.left ="0px";}
+            if(l==1) {i.style.left ="-740px";}
+            if(l==2) {i.style.left ="-1480px";}
+               if(l==3) {i.style.left ="-2220px";}
+                if(l<0) {l=0}
+
+        }
+    }
+
+    // sttart second carosel code
+
+    var right = 0;
+var maxMargin;
+var jumpMargin = 150;
+
+function setWidth(){
+  var boxwidth = document.querySelector(".container").offsetWidth;
+  var displaywidth = document.querySelector(".row").offsetWidth;
+  var displayheight = document.querySelector(".row").offsetHeight;
+  var children = document.querySelectorAll(".row-container > .container").length;
+  var outerboxwidth = children * boxwidth + (children*10);
+  document.querySelector(".row-container").style.width = outerboxwidth+"px";
+  document.querySelectorAll("button")[0].style.height = displayheight+"px";
+  document.querySelectorAll("button")[1].style.height = displayheight+"px";
+  maxMargin = outerboxwidth - displaywidth;
+}
+
+function slideLeft(event){
+  var rowcont = document.querySelector(".row-container");
+  if(right <= -maxMargin){
+    event.preventDefault();
+  }
+  else{
+    right -= jumpMargin;
+  }
+   rowcont.style.marginLeft = right+"px";
+}
+
+function slideRight(event){
+  var rowcont = document.querySelector(".row-container");
+  if(right==0){
+    event.preventDefault();
+  }
+  else if(right >= maxMargin){
+    event.preventDefault();
+  }
+  else{
+     right += jumpMargin;
+  }
+  rowcont.style.marginLeft = right+"px";
+}
+
+window.onload=setWidth;
+
+// work on slider image
+ 
+
+let images =[
+         "https://media6.ppl-media.com/tr:w-1280,c-at_max/mediafiles/ecomm/misc/1636384590_web-1.jpg",
+         "https://media6.ppl-media.com/tr:w-1280,c-at_max/mediafiles/ecomm/misc/1635407738_strip-web-1.jpg",
+         "https://media6.ppl-media.com/tr:w-1280,c-at_max/mediafiles/ecomm/misc/1636098158_nybae-web-thick-strip-banner-1280x272-2.jpg",
+         "https://media6.ppl-media.com/tr:w-1280,c-at_max/mediafiles/ecomm/misc/1636455470__1280-x-272.jpg",
+         "https://media6.ppl-media.com/tr:w-1280,c-at_max/mediafiles/ecomm/misc/1635322552_web-1.jpg"
+         
+     ];
+     
+     let container = document.getElementById("myslideshow");
+
+    function startslideshow(){
+ // images.forEach(function(image){
+                                let counter =0;
+                       let img = document.createElement("img");
+                       img.setAttribute("class","img")
+                            img.src= images[0];
+                              container.append(img);
+                             counter =counter+1;
+
+
+              setInterval(function(){
+                  
+                container.innerHTML =null;
+                if(counter === images.length){
+
+                    counter=0;
+                }
+                let img = document.createElement("img");
+                img.setAttribute("class","img")
+                             img.src= images[counter];
+                             container.append(img);
+                             counter =counter+1;
+                             console.log(counter)
+
+              },3000)
+
+   
+         
+    // })
+    }
+
+    startslideshow();
+
+//start anpther carosel
+
+const wrapper = document.querySelector('.cards-wrapper');
+// console.log(wrapper.clientWidth);
+
+// grab the dots
+const dots = document.querySelectorAll('.dot');
+// the default active dot num which is array[0]
+let activeDotNum = 0;
+
+dots.forEach((dot, idx) => {  
+//   number each dot according to array index
+  dot.setAttribute('data-num', idx);
+  
+//   add a click event listener to each dot
+  dot.addEventListener('click', (e) => {
+    
+    let clickedDotNum = e.target.dataset.num;
+    // console.log(clickedDotNum);
+//     if the dot clicked is already active, then do nothing
+    if(clickedDotNum == activeDotNum) {
+      // console.log('active');
+      return;
+    }
+    else {
+      // console.log('not active');
+      // shift the wrapper
+      let displayArea = wrapper.parentElement.clientWidth;
+      // let pixels = -wrapper.clientWidth * clickedDotNum;
+      let pixels = -displayArea * clickedDotNum
+      wrapper.style.transform = 'translateX('+ pixels + 'px)';
+//       remove the active class from the active dot
+      dots[activeDotNum].classList.remove('active');
+//       add the active class to the clicked dot
+      dots[clickedDotNum].classList.add('active');
+//       now set the active dot number to the clicked dot;
+      activeDotNum = clickedDotNum;
+    }
+    
+  });
+});
+
+ //another slider 
+
+ let images1 =[
+         "https://media6.ppl-media.com/tr:w-1280,c-at_max/mediafiles/ecomm/misc/1636363922_free-gift-web-1.jpg",
+         "https://media6.ppl-media.com/tr:w-1280,c-at_max/mediafiles/ecomm/misc/1636477936_price-cut-web-2.jpg",
+         "https://media6.ppl-media.com/tr:w-1280,c-at_max/mediafiles/ecomm/misc/1636363919_birthday-web-1.jpg",
+         "https://media6.ppl-media.com/tr:w-1280,c-at_max/mediafiles/ecomm/misc/1636363917_beauty-advisor-web-1.jpg",
+         "https://media6.ppl-media.com/tr:w-1280,c-at_max/mediafiles/ecomm/misc/1636363916_cashback-web-1.jpg",
+
+     ];
+     
+     let container3 = document.getElementById("myslideshow1");
+
+    function startslideshow1(){
+ // images.forEach(function(image){
+                                let counter =0;
+                       let image = document.createElement("img");
+                         image.setAttribute("class","imagee")
+                            image.src= images1[0];
+                              container3.append(image);
+                             counter =counter+1;
+
+
+              setInterval(function(){
+                  
+                container3.innerHTML =null;
+                if(counter === images1.length){
+
+                    counter=0;
+                }
+                let image = document.createElement("img");
+                image.setAttribute("class","imagee")
+                             image.src= images1[counter];
+                             container3.append(image);
+                             counter =counter+1;
+                             console.log(counter)
+
+              },3000)
+
+   
+         
+    // })
+    }
+
+    startslideshow1();
+
+// runing iamge slide code
+const wrapper1 = document.querySelector('.cards-wrapper1');
+ 
+ const dots1 = document.querySelectorAll('.dot1');
+  
+ let activeDotNum1 = 0;
+ 
+ dots1.forEach((dot1, idx1) => {  
+  
+   dot1.setAttribute('data-num', idx1);
+ 
+   dot1.addEventListener('click', (event) => {
+     
+     let clickedDotNum1 = event.target.dataset.num;
+    
+     if(clickedDotNum1 == activeDotNum1) {
+       
+       return;
+     }
+     else {
+       
+       let displayArea1 = wrapper1.parentElement.clientWidth;
+    
+       let pixels1 = -displayArea1 * clickedDotNum1
+       wrapper1.style.transform = 'translateX('+ pixels1 + 'px)';
+  
+       dots1[activeDotNum1].classList.remove('active1');
+  
+       dots1[clickedDotNum1].classList.add('active1');
+  
+       activeDotNum1 = clickedDotNum1;
+     }
+     
+   });
+ });
+</script>
+</html>
