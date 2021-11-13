@@ -1,7 +1,7 @@
 ---
 # Purpple Online Store Clone
 ---
-![tanishqlogo](https://mediabrief.com/wp-content/uploads/2020/07/Image-Purplle-to-launch-Indias-largest-online-beauty-sale-on-August-4th-MediaBrief.jpg)
+![purplle](https://mediabrief.com/wp-content/uploads/2020/07/Image-Purplle-to-launch-Indias-largest-online-beauty-sale-on-August-4th-MediaBrief.jpg)
 ---
 # Welcome :wave:
 ---
