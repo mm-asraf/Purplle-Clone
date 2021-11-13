@@ -103,11 +103,6 @@ First you have to have to go to the signup page and create a new account. Then y
 
 ![Sign In Page](https://github.com/MOHAMMADM-ASRAF/Purplle-Clone/blob/master/screenshots/signin.png)
 
----
-
-- **Featured-Page**
-
-![Featured Page](https://github.com/MOHAMMADM-ASRAF/Purplle-Clone/blob/master/screenshots/slidebtnfeature.png)
 
 ---
 - **Product Category Page**
@@ -144,3 +139,4 @@ First you have to have to go to the signup page and create a new account. Then y
 
 
 ---
+<h3 align="center">Thank You! For Your Time :smiley:</h3>
