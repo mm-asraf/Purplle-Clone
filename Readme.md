@@ -6,7 +6,7 @@
 # Welcome :wave:
 ---
 ### About Purplle:
-> Meet Purplle,India's No.1 Beauty DestiNation! a powerful concoction of technology and beauty. A portal which delivers the best of both the worlds.Makeup has been around for over a hundred thousand years, and beauty is only evolving. What started with red
+> Meet Purplle,India's No.1 Beauty DestiNation! A powerful concoction of technology and beauty. A portal which delivers the best of both the worlds.Makeup has been around for over a hundred thousand years, and beauty is only evolving. What started with red
 pigment clay is now a fascinating world of foundation, rouge, lipstick, blush, mascara, eye shadow, eye liner, eye
 caramba!
 
