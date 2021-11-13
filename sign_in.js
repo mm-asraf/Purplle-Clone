@@ -14,7 +14,7 @@ signinbutton.addEventListener("click", function(){
         
     if ((user.useremail == signinemail.value || user.usermobile == signinemail.value) && user.userpassword == signinpassword.value){
 
-    window.location.href = "ogallproducts.html"
+    window.location.href = "index.html"
     let currentuser = user.usermobile;
     localStorage.setItem("currentuser", currentuser);
 
