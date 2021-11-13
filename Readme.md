@@ -28,7 +28,7 @@ caramba!
  #### Project Blog: 
 - **[Checkout The  Project Blog](https://shwetamane13.hashnode.dev/cloning-the-purplle-website)** 
 
-
+---
 
 ### Our Team Members :heart:
 
