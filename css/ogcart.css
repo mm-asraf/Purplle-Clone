@@ -1,0 +1,274 @@
+*{
+    font-family: 'Cairo', sans-serif;
+    font-weight: 500;
+    color: #2C414C;
+}
+#display{
+    display: flex;
+}
+
+#divLeft{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    margin: -1% 10%;
+
+}
+
+#box{
+    display: flex;
+    border: 1px solid #c1c9ce;
+    margin: 2%;
+    height: 110%;
+    box-shadow: 2px 2px 20px #c1c9ce;
+}
+
+img{
+    width: 14%;
+    height: 50%;
+    margin: 2% 2%; 
+}
+
+#textBox{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
+    margin-top: -1%;
+    max-width: 75%;
+}
+
+#og{
+    display: flex;
+    margin-left: -20%;
+    margin-top: -70%;
+}
+
+#originalPrice{
+    padding: 5%;
+    text-decoration: line-through;
+    color: #6C7A82;
+    font-size: 100%;
+}
+
+#discountedPrice{
+    margin-top: 5%;
+    margin-left: 35%;
+    font-size: 140%;
+}
+
+#offPercentage{
+    padding: 5% 3%;
+    color: #E40980;
+}
+
+#price{
+    display: flex;
+    flex-direction: column;
+}
+
+#quantityBox{
+    display: flex;
+}
+
+#quantity{
+    width: 6%;
+    height: 70%;
+    margin-left: 1%;
+    margin-top: -0.7%;
+}
+
+#quantityText{
+    margin-top: -0.8%;
+}
+
+#remove{
+    margin-top: 5%;
+    margin-bottom: 2%;
+    border: none;
+}
+#wishlist{
+    margin-top: 5%;
+    margin-bottom: 2%;
+    border: none;
+}
+
+#myCart{
+    font-size: 170%;
+    margin-left: 10%;
+}
+
+#priceDetails{
+    font-weight: 700;
+}
+
+#divRight{
+    /* border: 1px solid black; */
+    width: 20%;
+    margin-left: 70%;
+    margin-top: -1%;
+    padding: 0% 2%;
+    position: fixed;
+}
+
+#totalMRP{
+    display: flex;
+    font-size: 13px;
+    height: 10%;
+}
+
+#youSave{
+    display: flex;
+    font-size: 13px;
+    height: 10%;
+}
+
+#youSaveValue{
+    color: #E40980;
+}
+
+#couponDiscountValue{
+    color: #E40980;
+    font-weight: 600;
+}
+
+#orderDetails{
+    display: flex;
+    font-size: 18px;
+    height: 10%;
+    font-weight: 800;
+}
+
+#placeOrderBtn{
+    width: 95%;
+    height: 50px;
+    margin-left: 1%;
+    border: none;
+    background-color: #E40980;
+    color: white;
+    cursor: pointer;
+}
+
+/* carousell content css */
+
+#ABmainTitle{
+    font-size: 15px;
+    margin-top: -1%;
+}
+
+#ABprice{
+    margin-top: -50px;
+}
+
+#ABdiscountedPrice{
+    display: inline-block;
+    font-size: 25px;
+}
+
+#ABoriginalPrice{
+    display: inline-block;
+    color: #96A0A6;
+    font-size: 15px;
+    margin-left: 2%;
+    text-decoration: line-through;
+}
+
+#ABoffPercentage{
+    display: inline-block;
+    margin-left: 2%;
+    font-size: 20px;
+    color: #E40980;
+}
+
+/* alsoBought carousell */
+
+.container {
+        width: 800px;
+        padding: 1rem;
+        margin-left: 4%;
+        margin-top: -2%;
+    }
+
+    .container h2{
+        font-weight: 300;
+        margin-bottom: 1rem;
+    }
+    
+    .carousell-container{
+        width: 100%;
+        height: 360px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        border-radius: 0.2rem;
+        background-color: white;
+        border-radius: 0.2rem;
+        overflow: hidden;
+    }
+    
+
+    .carousell-container .carousell-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 50%;
+            left: 0.5rem;
+            transition: all 0.3s ease;
+            transform: translateY(-50%);
+    }
+
+    .carousell-content .box {
+        width: 200px;
+        height: 300px;
+        background-color: white;
+        margin-right: 1rem;
+        /* padding: 1.2rem; */
+        border-radius: 0.5rem;
+        /* box-shadow: 1px 1px 16px 1px rgb(223, 204, 204); */
+        border: 0.5px rgb(231, 224, 224);
+    }
+
+    #carousellPrice{
+        margin-top: -20%;
+    }
+
+    .btn {
+        position: absolute;
+        top: 50%;
+        width: 50px;
+        height: 50px;
+        border: 50%;
+        border-radius: 50%;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        transform: translateY(-50%) scale(0.5);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+    }
+
+    .btn.show {
+        transform: translateY(-50%) scale(1);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .btn.left {
+        left: 0.1rem;
+    }
+
+    .btn.right {
+        right: 0.1rem;
+    }
+
+    .ABimg{
+        width: 100%;
+        height: 70%;
+    }
+
+    #alsoBought{
+        margin-left: 30%;
+        font-size: 200%;
+    }

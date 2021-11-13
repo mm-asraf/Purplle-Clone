@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/ogcart.css">
+    <link rel="icon" href="https://media6.ppl-media.com/mediafiles/ecomm/misc/purplle-16x16.png">
+
+    <title>welcome to shopping Cart</title>
+
+
+</head>
+
+<body>
+
+
+
+    <p id="myCart"></p>
+    <div id="display">
+        <div id="divRight">
+            <p id="priceDetails">Price Details</p>
+            <div id="totalMRP">
+                <p id="totalMrpText">Total
+                    MRP:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</p>
+                <p id="totalMRPValue"></p>
+            </div>
+            <div id="totalMRP">
+                <p id="savingOnMrpText">Saving on
+                    MRP:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&ensp;&ensp;&nbsp;&nbsp;&nbsp;</p>
+                <p id="savingOnMRPValue"></p>
+            </div>
+            <div id="totalMRP">
+                <p id="subTotalText">Sub
+                    Total:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;</p>
+                <p id="subTotalValue"></p>
+            </div>
+            <div id="totalMRP">
+                <p id="shippingChargesText">Shipping
+                    Charges:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;</p>
+                <p id="shippingChargesValue">49</p>
+            </div>
+            <div id="totalMRP">
+                <p id="couponDiscountText">Coupon Discount:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</p>
+                <p id="couponDiscountValue">APPLY COUPON</p>
+            </div>
+            <hr>
+
+            <div id="orderDetails">
+                <p id="orderDetailsText">Order details:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</p>
+                <p id="orderDetailsValue"></p>
+            </div>
+
+            <div id="youSave">
+                <p id="youSaveText">You
+                    Save:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</p>
+                <p id="youSaveValue"></p>
+            </div>
+
+            <a href="checkout.html"> <button id="placeOrderBtn">Place Order</button></a>
+        </div>
+    </div>
+
+    <!-- alsoBought carousell -->
+
+    <p id="alsoBought">Also Bought</p>
+    <div class="container">
+
+        <div class="carousell-container">
+
+            <div class="carousell-content" id="carousellContent"></div>
+
+            <div class="controls">
+                <button class="btn left show" id="carousellLeftBtn">&lt;</button>
+                <button class="btn right show" id="carousellRightBtn">&gt;</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script src="ogcart.js"></script>

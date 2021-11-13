@@ -1,0 +1,354 @@
+*{
+    font-family: 'Cairo', sans-serif;
+    font-weight: 500px;
+    color: #2C414C;
+}
+
+#display{
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    grid-gap: 25px;
+    margin-left: 15%;
+}
+
+.shades{
+    display: flex;
+}
+
+/* #container{
+    display: flex;
+} */
+
+#zoomImage{
+    width: 45%;
+    height: 35%;
+    margin-top: 10%;
+}
+
+#divLeft{
+    display: flex;
+    flex-direction: column;
+    width: 8%;
+    margin: 10% 4% 0% -8%;
+}
+
+.tiles{
+    width: 80%;
+    height: 20%;
+    padding: 10%;
+}
+.top-tile{
+    padding: 0% 10% 10% 10%;
+}
+
+#divRight{
+    width: 40%;
+    margin: 8% 5% 0% 6%;
+}
+
+.shade{
+    width: 13%;
+    height: 13%;
+    padding: 2% 4% 2% 0%;
+}
+
+#navDiv{
+    display: flex;
+    margin: 5% 10% 0% 10%;
+}
+
+hr{
+    width: 50%;
+    margin-left: 10%;
+    margin-top: -18px;
+    background-color: #6C7A82;
+}
+
+.navDiv{
+    padding: 0% 4% 0% 0%;
+    font-size: 170%;
+}
+
+#highlights{
+    max-width: 50%;
+    margin-left: 10%;
+    margin-top: 2%;
+    color: #6C7A82;
+}
+
+#highTitle{
+    margin-left: 10%;
+    margin-top: -2%;
+    font-size: 140%;
+    
+}
+
+#benefits{
+    display: flex;
+    width: 40%;
+    margin-left: 10%;
+}
+
+.benefits{
+    width: 15%;
+    height: 15%;
+    padding: 4.5%;
+    opacity: 0.7;
+}
+
+#beneText{
+    display: flex;
+    max-width: 25%;
+    font-size: 100%;
+    margin-left: 12%;
+}
+
+#benefitsText{
+    margin-left: 10%;
+    font-size: 140%;
+}
+
+.beneText{
+    margin: 0% 20% 0% 2%;
+    text-align: center;
+}
+
+#description{
+    max-width: 50%;
+    margin-left: 10%;
+    color: #6C7A82;
+}
+
+#desTitle{
+    margin-left: 10%;
+    font-size: 140%;
+}
+
+#bestBefore{
+    margin-left: 12%;
+}
+
+#specTitle{
+    margin-left: 10%;
+    font-size: 140%;
+}
+
+#specification{
+    margin-left: 10%;
+    font-size: 80%;
+}
+
+.spec{
+    padding: 0.3%;
+}
+
+details{
+    margin-left: 12%;
+}
+
+#ingredients{
+    max-width: 50%;
+    color: #6C7A82;
+}
+
+#mainTitle{
+    font-size: 20px;
+}
+
+#rating{
+    width: 11%;
+    height: 6%;
+    background-color: #CDD614;
+    padding-left: 2%;
+    color: white;
+}
+
+#discountedPrice{
+    display: inline-block;
+    font-size: 40px;
+    margin-top: -5px;
+}
+
+#originalPrice{
+    display: inline-block;
+    color: #96A0A6;
+    font-size: 20px;
+    margin-left: 2%;
+    text-decoration: line-through;
+}
+
+#offPercentage{
+    display: inline-block;
+    margin-left: 2%;
+    font-size: 20px;
+    color: #E40980;
+}
+
+#bestSeller{
+    width: 30%;
+    height: 6%;
+    color: white;
+    background-color: #A456AB;
+    padding-left: 2%;
+    margin-top: -30px;
+    /* display: inline-block; */
+}
+
+#seeTop{
+    margin-top: -30px;
+    display: inline-block;
+    color: #E40980;
+}
+
+#shadeText{
+    margin-top: -10px;
+}
+
+#shadeSelect{
+    width: 81%;
+    height: 8%;
+    border: 1px solid gray;
+}
+
+#addToCartBtn{
+    width: 55%;
+    height: 10%;
+    border: none;
+    background-color: #E40980;
+    color: white;
+    border-radius: 5px;
+    font-size: 120%;
+}
+
+#saveBtn{
+    width: 30%;
+    height: 10%;
+    margin-left: 3%;
+    border: 0.5px solid rgb(180, 175, 175);
+    color: #E40980;
+    border-radius: 5px;
+    font-size: 120%;
+}
+
+#ABmainTitle{
+    font-size: 15px;
+    margin-top: -1%;
+}
+
+#ABprice{
+    margin-top: -50px;
+}
+
+#ABdiscountedPrice{
+    display: inline-block;
+    font-size: 25px;
+}
+
+#ABoriginalPrice{
+    display: inline-block;
+    color: #96A0A6;
+    font-size: 15px;
+    margin-left: 2%;
+    text-decoration: line-through;
+}
+
+#ABoffPercentage{
+    display: inline-block;
+    margin-left: 2%;
+    font-size: 20px;
+    color: #E40980;
+}
+
+/* also bought carousell */
+
+.container {
+        width: 1200px;
+        padding: 1rem;
+        margin-left: 4%;
+        margin-top: 2%;
+    }
+
+    .container h2{
+        font-weight: 300;
+        margin-bottom: 1rem;
+    }
+    
+    .carousell-container{
+        width: 100%;
+        height: 360px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        border-radius: 0.2rem;
+        background-color: white;
+        border-radius: 0.2rem;
+        overflow: hidden;
+    }
+    
+
+    .carousell-container .carousell-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 50%;
+            left: 0.5rem;
+            transition: all 0.3s ease;
+            transform: translateY(-50%);
+    }
+
+    .carousell-content .box {
+        width: 200px;
+        height: 300px;
+        background-color: white;
+        margin-right: 1rem;
+        /* padding: 1.2rem; */
+        border-radius: 0.5rem;
+        /* box-shadow: 1px 1px 16px 1px rgb(223, 204, 204); */
+        border: 0.5px rgb(231, 224, 224);
+    }
+
+    #carousellPrice{
+        margin-top: -20%;
+    }
+
+    .btn {
+        position: absolute;
+        top: 50%;
+        width: 50px;
+        height: 50px;
+        border: 50%;
+        border-radius: 50%;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        transform: translateY(-50%) scale(0.5);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+    }
+
+    .btn.show {
+        transform: translateY(-50%) scale(1);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .btn.left {
+        left: 0.1rem;
+    }
+
+    .btn.right {
+        right: 0.1rem;
+    }
+
+    .ABimg{
+        width: 100%;
+        height: 70%;
+    }
+
+    #alsoBought{
+        margin-left: 45%;
+        font-size: 200%;
+    }

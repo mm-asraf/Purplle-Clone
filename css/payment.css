@@ -1,0 +1,20 @@
+.div1{
+    /* border: 1px solid red; */
+}
+.div2{
+    border: 1px solid whitesmoke;
+    margin-left: 500px;
+    margin-top: 150px;
+    height: 400px;
+    width: 300px;
+    
+}
+.img{
+    margin-left: 50px;
+    height: 300px;
+    width: 200px;
+    
+}
+.h2{
+    margin-left: 50px;
+}

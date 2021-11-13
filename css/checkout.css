@@ -1,0 +1,154 @@
+#address{
+    /* border: 2px solid red; */
+    display: grid;
+    grid-template-columns: 65% 30%;
+    gap: 5%;
+    height: 480px;
+    margin:40px 280px 200px 275px;
+}
+.add1{
+    border: 1px solid whitesmoke;
+    height: 400px;
+    margin-top: 12%;
+
+}
+.add11{
+    border: 1px solid whitesmoke;
+    background-color: whitesmoke;
+    height: 40px;
+}
+.add123{
+    /* border: 1px solid red; */
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.add12{
+    border: 2px solid whitesmoke;
+    height: 265px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 300px;
+}
+.h3div2{
+    margin-left: 20px;
+}
+.pdiv2{
+    margin-left: 20px;
+    color: #757575;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    line-height: 1.3;
+}
+.div21{
+    /* border: 1px solid red; */
+    height: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #e40980;
+    border-radius:3px;
+    text-align: center;
+    color: white;
+    padding-top: 13px;
+    padding-bottom: 10px;
+}
+.div22{
+    /* border: 1px solid red; */
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.div221{
+    margin-left:20%;
+    color: #757575;
+}
+.div222{
+    margin-left: 30%;
+    color: #757575;
+}
+
+.add13{
+    text-align: center;
+    margin-top: 33px;
+    color: #e40980;
+    font-size: 15px;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+.a1{
+    color: #e40980;
+}
+
+.add2{
+    /* border: 1px solid red; */
+    height: 480px;
+}
+.add21{
+    border: 2px solid whitesmoke;
+    height: 35px;
+    color: #757575;
+    text-align: center;
+    padding-top: 15px;
+    margin-top: -12px;
+    border-radius: 3px;
+}
+.add22{
+    /* border: 1px solid red; */
+    margin-top: 15px;
+    line-height: 1.8;
+}
+.add2span1{
+    font-size: 13px;
+    color: #616161;
+}
+.add2span2{
+    margin-left: 17%;
+    color: #e40980;
+}
+.add23{
+    border: .5px solid whitesmoke;
+    margin-top: 10px;
+}
+.add24{
+    margin-top: 10px;
+    font-size: 15px;
+}
+.add26{
+    line-height: 2;
+    color: #616161;
+}
+.add261{
+    color: #212121;
+}
+.add263{
+    margin-left: 59%;
+}
+.add265{
+    margin-left: 50%;
+    color: #e40980;
+}
+.add267{
+    margin-left: 65%;
+}
+.add269{
+    margin-left: 48%;
+}
+.add28{
+    line-height: 2;
+}
+.add281{
+    font-size: 18px;
+    color: #212121;
+}
+.add282{
+    font-size: 20px;
+    margin-left: 53%;
+}
+.add283{
+    color: #616161;
+}
+.add284{
+    color: #616161;
+    margin-left: 65%;
+}
