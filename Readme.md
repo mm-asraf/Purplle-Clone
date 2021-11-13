@@ -81,55 +81,66 @@ First you have to have to go to the signup page and create a new account. Then y
 ---
 - **Home Page**
 
-![Landing Page]()
+![Landing Page](https://github.com/MOHAMMADM-ASRAF/Purplle-Clone/blob/master/screenshots/banner.png)
 
+---
 - **Navbar UI**
 
-![Landing Page]()
+![Landing Page Subcategory](https://github.com/MOHAMMADM-ASRAF/Purplle-Clone/blob/master/screenshots/nav1.png)
 
+---
+- **Navbar UI 2**
+
+![Landing Page Brands Category](https://github.com/MOHAMMADM-ASRAF/Purplle-Clone/blob/master/screenshots/nav2.png)
+
+---
 - **Sign-Up Page**
 
-![Sign Up Page]()
+![Sign Up Page](https://github.com/MOHAMMADM-ASRAF/Purplle-Clone/blob/master/screenshots/signup.png)
 
-
+---
 - **Sign-In Page**
 
-![Sign In Page]()
+![Sign In Page](https://github.com/MOHAMMADM-ASRAF/Purplle-Clone/blob/master/screenshots/signin.png)
 
+---
 
 - **Featured-Page**
 
-![Featured Page]()
+![Featured Page](https://github.com/MOHAMMADM-ASRAF/Purplle-Clone/blob/master/screenshots/slidebtnfeature.png)
 
-
+---
 - **Product Category Page**
 
-![Product Category Page]()
+![Product Category Page](https://github.com/MOHAMMADM-ASRAF/Purplle-Clone/blob/master/screenshots/allproducts.png)
 
+---
 
+- **Product Details Page**
+![Product Details Page](https://github.com/MOHAMMADM-ASRAF/Purplle-Clone/blob/master/screenshots/productdetaillpage.png)
 
-
+---
 - **Cart Page**
 
-![Cart Page]()
+![Cart Page](https://github.com/MOHAMMADM-ASRAF/Purplle-Clone/blob/master/screenshots/cart.png)
 
+---
 
 
 - **Checkout Page**
 
-![Checkout Page]()
+![Checkout Page](https://github.com/MOHAMMADM-ASRAF/Purplle-Clone/blob/master/screenshots/delivery.png)
 
+---
 - **Payment Page**
 
-![Payment Page]()
+![Payment Page](https://github.com/MOHAMMADM-ASRAF/Purplle-Clone/blob/master/screenshots/payment.png)
 
-- **Address  Page**
+---
 
-![Address Page]()
+- **Footer Section**
 
-- **Order Successful Page**
-
-![Order Successful Page]()
+![Order Successful Page](https://github.com/MOHAMMADM-ASRAF/Purplle-Clone/blob/master/screenshots/footer.png)
 
 
 ---
