@@ -1,0 +1,94 @@
+body{
+    background-color: #EEEEEE;
+}
+.new{
+    border: 1px solid #FAFAFA;
+    margin: 3% 30% 0% 30%;
+    height: 720px;
+    background-color: white;
+}
+
+.new1{
+    border: 1px solid #FAFAFA;
+    height: 40px;
+    background-color: #FAFAFA;
+    padding-left: 25;
+   
+}
+.new12{
+    /* border: 1px solid red; */
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+
+.new2{
+    /* border: 1px solid red; */
+    margin-top: 50px;
+   
+   
+}
+.l1{
+    margin-left: 20px;
+}
+select#input1{
+    padding-left: 20px;
+    height: 40px;
+    
+    border: 1px solid whitesmoke;
+}
+
+input#textbox{
+    padding-left: 20px;
+    height: 40px;
+    width: 80%;
+    border: 1px solid whitesmoke;
+    
+}
+.l2{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+input#textbox1{
+    width: 80%;
+    border-top:10px ;
+    
+}
+.addtype{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.p1{
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 15px;
+    color: #BDBDBD;
+}
+.last{
+    border: 1px solid white;
+    height: 40px;
+    margin-top: 20px;
+    
+}
+.lastt{
+    /* border: 1px solid red; */
+    margin-top: 10px;
+}
+
+.last1{
+    /* border: 1px solid red; */
+    margin-left: 50%;
+    margin-top: 10px;
+    padding: 10px;
+}
+.last2{
+    border: 1px solid red;
+    margin-left: 15px;
+    padding: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #e40980;
+    color: white;
+    border-radius: 3px;
+}
