@@ -21,10 +21,12 @@ caramba!
 ---
 
 #### Presentation Video: 
-- **[Checkout The Demo Video On drive](https://drive.google.com/file/d/1AttcgzNNvK4M2Az6f53g72YelP7pEUcD/view)**
+- **[Checkout The Demo Video On drive](https://festive-shirley-d33e4c.netlify.app)**
 
 ---
-
+#### Demo Deployed link:
+- **[Checkout this deployed link](https://drive.google.com/file/d/1AttcgzNNvK4M2Az6f53g72YelP7pEUcD/view)**
+---
  #### Project Blog: 
 - **[Checkout The  Project Blog](https://shwetamane13.hashnode.dev/cloning-the-purplle-website)** 
 
