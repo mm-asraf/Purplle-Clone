@@ -25,7 +25,7 @@ caramba!
 
 ---
 #### Demo Deployed link:
-- **[Checkout this deployed link](https://festive-shirley-d33e4c.netlify.app)**
+- **[Checkout this deployed link](https://purplle-web-clone.netlify.app/)**
 ---
  #### Project Blog: 
 - **[Checkout The  Project Blog](https://shwetamane13.hashnode.dev/cloning-the-purplle-website)** 
