@@ -61,7 +61,7 @@ caramba!
 
 ### How To Use ✅
 
-First you have to have to go to the signup page and create a new account. Then you will be redirected to the signIn page, where you will have to Enter Your Previous Signup Details For Further Process. Use that to complete the signup process. After the signup process is completed user details are added to the local storage.After clicking SignIn page User will redirect to products Page You can now go through the products page and navigate to add products to the cart. After that you can proceed to the checkout page. If you are not signed in you will be redirected to the signin page where you should use the same details you used during the signup proces. Otherwise you will not be able to signup. After signin you can go to the checkout page and add your address and proceed to payment page to add your debit/credit card details to place your order successfully.
+First you have  to go to the signup page and create a new account. Then you will be redirected to the signIn page, where you will have to Enter Your Previous Signup Details For Further Process. Use that to complete the signup process. After the signup process is completed user details are added to the local storage.After clicking SignIn page User will redirect to products Page You can now go through the products page and navigate to add products to the cart. After that you can proceed to the checkout page. If you are not signed in you will be redirected to the signin page where you should use the same details you used during the signup proces. Otherwise you will not be able to signup. After signin you can go to the checkout page and add your address and proceed to payment page to add your debit/credit card details to place your order successfully.
 
 ---
 
